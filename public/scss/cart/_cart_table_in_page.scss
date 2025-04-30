@@ -79,7 +79,7 @@
 
 
 .bascet_tovar .control .clear_bascet_btn{
-    color:$sub_color;
+    color:$old_sub_color;
     margin-left: auto;
     position: relative;
 }
@@ -87,7 +87,7 @@
 .bascet_tovar .control .clear_bascet_btn{
     display: flex;
     svg {
-        stroke:$sub_color;
+        stroke:$old_sub_color;
         width:25px;
         height:25px;
         margin: auto 0 auto 0;
@@ -105,7 +105,7 @@
 }
 
 .bascet_tovar .control .clear_bascet_btn:hover span{
-    border-bottom: 1px dashed $sub_color;
+    border-bottom: 1px dashed $old_sub_color;
 
 }
 

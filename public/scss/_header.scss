@@ -1,3 +1,120 @@
-header{
-    
+@use "helpers/" as *;
+.header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    padding-block: fluid(22, 14);
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+
+
+    @keyframes scrolling-header {
+        to {
+            background-color: #ebebecf8;
+            border-color: #20202417;
+        }
+    };
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__overlay-menu-dialog {
+        position: fixed;
+        inset: 0;
+        margin-left: auto;
+        width: 320px;
+        height: 100%;
+        padding: 20px;
+        background-color: rgba(40, 40, 40, 1);
+        border: none;
+        transition-duration: 0.2s;
+        transition-behavior: allow-discrete;
+
+        &[open] {
+            display: flex;
+            justify-content: center;
+
+            @starting-style {
+                opacity: 0;
+                translate: 50%;
+            }
+        }
+
+        &:not([open]){
+            opacity: 0;
+            translate: 50%;
+        }
+    }
+
+    &__menu {
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: fluid-to-laptop(100, 24);
+        }
+
+        &-item {
+            white-space: nowrap;
+        }
+
+        &-link {
+            padding: fluid-to-laptop(10, 5);
+
+            &.active {
+                color: $sub_color;
+                font-weight: 600;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .burger-button {
+        position: relative;
+    }
+}
+
+
+@media (width > 1023px) {
+    .header {
+        &__overlay-menu-dialog {
+            display: contents;
+        }
+
+        &__menu {
+            padding: fluid-to-laptop(6, 3);
+        }
+    }
+
+}
+
+@media (width <= 1023px) {
+    .header {
+
+        .header__menu-list {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        &__menu {
+
+            &-list {
+                row-gap: 14px;
+            }
+
+            &-link {
+                color: $main_color;
+                font-size: 20px;
+            }
+        }
+
+
+    }
 }

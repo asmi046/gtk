@@ -1,3 +1,4 @@
+@use "../helpers" as *;
 details {
     display: flex;
 
@@ -5,7 +6,7 @@ details {
         list-style: none;
         border: 1px solid $gray_border_color;
         padding: 20px  50px 20px 30px;
-        background-color: $main_color;
+        background-color: $old_main_color;
         border-radius: $border_rad;
         position: relative;
 

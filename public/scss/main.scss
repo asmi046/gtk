@@ -1,21 +1,36 @@
-@import "vars";
-@import "null";
-@import "fonts";
-@import "scroll";
-@import "text-styles";
-@import "pagination";
-@import "burger-icon";
-@import "standart";
-@import "form/all-form";
-@import "elements/all-elements";
+@use "helpers/" as *;
+@use "null";
+@use "fonts";
+@use "scroll";
+@use "pagination";
+@use "burger-icon";
+@use "form/all-form";
+@use "elements/all-elements";
+@use "header";
+@use "footer";
 
-
-body{
-    font-family: $main_fonts;
-    font-size: 16px;
+:root {
+    --container-width: #{fluid-to-laptop($container_desktop_width, $container_laptop_width)};
+    --header-container-width: #{fluid-to-laptop($container_header, $container_laptop_width)};
+    --section-padding-y: #{fluid(50, 15)};
+    --container-padding-x: 16px;
 }
 
-header,
+html {
+    &.is-lock {
+        overflow: hidden;
+    }
+}
+
+body{
+    @include fluid-text(18, 14);
+
+    font-family: $main_fonts;
+    display: flex;
+    flex-direction: column;
+    background-color: $main_color;
+}
+
 footer,
 section{
     width: 100%;
@@ -23,17 +38,36 @@ section{
     padding-bottom: $section_space;
 }
 
-.container{
-    width:100%;
-    max-width: $conteiner_max_w;
-    margin: 0 auto;
+main {
+    flex-grow: 1;
 }
 
+.container, .header-container{
+    width:100%;
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+}
+
+.header-container {
+    max-width: calc(var(--header-container-width) + var(--container-padding-x) * 2);
+}
+
+.visually-hidden {
+    @include visyally-hidden;
+}
 
 img {
     width:100%;
     height:100%;
     object-fit: cover;
+}
+
+.logo {
+    width: fluid(424, 212);
 }
 
 .map_in_page {
@@ -50,13 +84,6 @@ img {
     }
 }
 
-@media (max-width: 1440px) {
-    .container {
-        width: 96%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 
 // Схема с сайдбаром
 // @import "sidebar-schem";
@@ -66,3 +93,111 @@ img {
 
 // Иконка бургера
 // @import "burger-icon";
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h1, .h1 {
+    @include fluid-text(82, 32);
+    line-height: 1.2
+}
+
+h2, .h2 {
+    @include fluid-text(44, 26);
+}
+
+h3, .h3 {
+    @include fluid-text(34, 20);
+}
+
+h4, .h4 {
+    @include fluid-text(28, 22);
+}
+
+h5, .h5 {
+    @include fluid-text(22, 18);
+}
+
+h6, .h6 {
+    @include fluid-text(18, 16);
+}
+
+
+a, button, label, input, textarea, select, svg * {
+    transition: $transition_duration;
+}
+
+a {
+    color: inherit;
+
+    @include hover {
+        color: $sub_color;
+    }
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+:focus-visible {
+    @include focus-visible;
+}
+
+    .contacts {
+        font-family: $interactive_fonts;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        color: $main_color;
+
+        &.call_phone {
+            font-size: fluid(24, 16);
+        }
+
+        &.sand_email {
+            font-size: fluid(20, 14);
+        }
+    }
+
+
+.main {
+    &__inner {
+        padding: var(--section-padding-y) 0;
+    }
+    &__title{
+        display: flex;
+        align-items: flex-end;
+        gap: 30px;
+        &-btn {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__content{
+        --mainContentColumns: 3;
+
+        display: grid;
+        grid-template-columns: repeat(var(--mainContentColumns), 1fr);
+        gap: fluid(170,20);
+
+        &-item{
+
+
+            &--number {
+                font-size: fluid(116, 24);
+            }
+
+            &--text{
+                font-size: fluid(18, 16);
+            }
+        }
+    }
+}

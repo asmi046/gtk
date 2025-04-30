@@ -1,3 +1,4 @@
+@use "helpers" as *;
 .pagination_line {
     width: 100%;
     display: flex;
@@ -31,15 +32,15 @@
 
 	&.current {
 		color: #fff;
-		background-color: $main_color;
-		border: 1px solid $main_color;
+		background-color: $old_main_color;
+		border: 1px solid $old_main_color;
 	}
 
 	@media (min-width:1025px) {
 		&:hover {
 			color: #fff;
-			background-color: $main_color;
-			border: 1px solid $main_color;
+			background-color: $old_main_color;
+			border: 1px solid $old_main_color;
 		}
 	}
 }

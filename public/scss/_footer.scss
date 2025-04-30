@@ -1,3 +1,34 @@
-footer {
-    
+@use "helpers/" as *;
+.footer {
+    background-color: $footer_bg_color;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__menu {
+
+        &-list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 13px;
+            }
+
+            &-item {
+                white-space: nowrap;
+            }
+
+            &-link {
+                color: $main_color;
+                &.active {
+                    color: $sub_color;
+                    font-weight: 600;
+                    pointer-events: none;
+                }
+            }
+
+
+    }
 }

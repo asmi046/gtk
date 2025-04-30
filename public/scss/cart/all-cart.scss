@@ -1,5 +1,5 @@
-$main_color: #65B965;
-$sub_color: #ffcb00e6;
+$old_main_color: #65B965;
+$old_sub_color: #ffcb00e6;
 
 @import "cart_table_in_page";
 @import "to_card_btn";
@@ -7,11 +7,11 @@ $sub_color: #ffcb00e6;
 @import "multi-search";
 
 .cart_icon {
-    fill: $main_color;
+    fill: $old_main_color;
 }
 
 .cart_icon_loader {
     fill: none;
-    stroke: $main_color;
+    stroke: $old_main_color;
     height: 100px;
 }

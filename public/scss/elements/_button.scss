@@ -1,25 +1,26 @@
+@use "../helpers" as *;
 button,
 .button {
-    background-color: $main_color;
-    border: 1px solid $main_color;
+    background-color: $old_main_color;
+    border: 1px solid $old_main_color;
     color:white;
     padding: 10px 30px;
     cursor: pointer;
-    transition: $main_transition;
+    transition: $transition_duration_longer;
     display: inline-block;
     line-height: 1;
     font-family: $main_fonts;
     font-size: 16px;
 
     &:hover {
-        background-color: $hover_color;
+        background-color: $button_hover;
     }
 }
 
 .button-white {
     background-color: white;
-    color: $main_color;
-    border: 1px solid $main_color;
+    color: $old_main_color;
+    border: 1px solid $old_main_color;
     text-decoration: none;
 
     &:hover{
@@ -27,3 +28,78 @@ button,
         text-decoration: none;
     }
 }
+
+.btn {
+    @include flex-center(true);
+
+    padding: fluid-to-laptop(15, 10) fluid-to-laptop(24, 16);
+    color: $main_color;
+    font-size: fluid(20, 14);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background-color: $sub_color;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+
+    @include hover {
+        color: $main_color;
+        background-color: $button_hover;
+    }
+
+    &:active {
+        scale: 1.05;
+    }
+}
+
+.burger-button {
+    @include square(55px);
+    @include flex-center(true);
+
+    padding: 0;
+    border: none;
+    border-radius: 6px;
+
+    @include hover {
+        background-color: $button_hover;
+    }
+
+    &.is-active  {
+        .burger-button__line{
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+
+        &--2 {
+            stroke-dasharray: 1 60;
+            stroke-dashoffset: -30;
+            }
+        }
+
+    }
+
+
+    &:not(.is-active) {
+        .burger-button__line--3 {
+            stroke-dasharray: 30 207;
+            stroke-dashoffset: -30;
+    }
+        }
+
+        &__line {
+            fill: none;
+            stroke: white;
+            stroke-width: 6;
+            stroke-linecap: round;
+            stroke-dasharray: 60 207;
+            transition:
+                stroke-dasharray 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+            &--2 {
+                    stroke-dasharray: 60 60;
+                }
+        }
+}
+
+
+
