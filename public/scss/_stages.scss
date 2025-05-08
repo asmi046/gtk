@@ -1,0 +1,80 @@
+@use "helpers/" as *;
+
+.stages {
+    &__bg {
+        background-image: url('../img/stages_bg.webp');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
+
+    &__list {
+        counter-reset: stage;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 60px;
+
+        &-item {
+            position: relative;
+            counter-increment: stage;
+            display: flex;
+            flex-direction: column;
+            max-width: 75ch;
+
+            &::before {
+                @include square(54px);
+                @include flex-center;
+                content: counter(stage);
+                position: absolute;
+                border-radius: 50%;
+                color: $main_color;
+                font-size: 24px;
+                top: 0;
+                transform: translateY(calc(-50% + 17px));
+                left: -10%;
+            }
+
+            &:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 2px;
+                height: calc(100% + 44px);
+                z-index: -1;
+            }
+
+            &:nth-child(odd) {
+
+                &::before{
+                    background-color: $sub_color;
+                }
+                &::after {
+                    background-color: $sub_color;
+                    transform-origin: bottom left;
+                    transform: translateY(calc(-50% + 34px)) rotate(337deg);
+                }
+            }
+
+            &:nth-child(even) {
+                margin-left: fluid(50, 10);
+                &::before{
+                    background-color: $gray_bg_color;
+                }
+
+                &::after {
+                    background-color: $gray_bg_color;
+                    left: calc(-10%);
+                    transform-origin: center center;
+                    transform: translateY(calc(-50% + 34px)) rotate(15deg);
+                }
+            }
+        }
+
+        &-title {
+            line-height: 1;
+            padding-bottom: 20px;
+        }
+    }
+}

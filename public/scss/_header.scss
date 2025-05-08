@@ -1,38 +1,140 @@
 @use "helpers/" as *;
+
 .header {
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    width: 100%;
-    padding-block: fluid(22, 14);
-    animation-name: scrolling-header;
-    animation-fill-mode: both;
-    animation-timeline: scroll();
-    animation-range: 0 100px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-
-    @keyframes scrolling-header {
-        to {
-            background-color: #ebebecf8;
-            border-color: #20202417;
+    &__video-bg {
+        @include abs-cover;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-    };
+    }
 
+    &__video-overlay {
+        @include abs-cover;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    &__inner {
+        position: relative;
+        color: $main_color;
+        z-index: 2;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        column-gap: 2rem;
+        padding-block: fluid(10, 5) fluid(70, 15);
+        &-btn {
+            margin-bottom: 1.5625rem;
+        }
+    }
+
+    &__content {
+        padding-block: fluid(50,10);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        &-item {
+            flex: 0 0 17%;
+            &--contacts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                white-space: nowrap;
+                .call_phone {
+                    font-size: fluid(24, 16);
+                }
+
+                .sand_email {
+                    font-size: fluid(20, 14);
+                }
+            }
+
+            &--number {
+
+               span {
+                    font-size: fluid(116, 20);
+                    font-family: $sub_fonts;
+                    font-weight: 700;
+               }
+            }
+
+            &--text {
+                font-size: fluid(16, 14);
+            }
+        }
+    }
+}
+
+.menu__navigation {
+    display: flex;
+    align-items: center;
+
+    &-list {
+        display: flex;
+        column-gap: fluid-to-laptop(60,15);
+    }
+
+    &-item {
+        white-space: nowrap;
+    }
+
+    &-link {
+        color: $main_color;
+        padding: fluid-to-laptop(10, 5);
+            &.active {
+                color: $sub_color;
+                font-weight: 600;
+                pointer-events: none;
+            }
+    }
+}
+
+
+.sticky-menu {
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        width: 100%;
+        animation-name: scrolling-header;
+        animation-fill-mode: both;
+        animation-timeline: scroll();
+        animation-range: 0 100px;
+        overflow: hidden;
+        background-color: rgba(40, 40, 40, 0.8);;
+            @keyframes scrolling-header {
+                to {
+                    background-color: rgba(40, 40, 40,0.4);
+                }
+            }
     &__inner {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        column-gap: 16px;
     }
 
-    &__overlay-menu-dialog {
+
+
+    &__dialog {
         position: fixed;
         inset: 0;
         margin-left: auto;
-        width: 320px;
+        width: 325px;
         height: 100%;
-        padding: 20px;
-        background-color: rgba(40, 40, 40, 1);
+        background-color: rgba(40, 40, 40, 0.4);
         border: none;
         transition-duration: 0.2s;
         transition-behavior: allow-discrete;
@@ -51,23 +153,14 @@
             opacity: 0;
             translate: 50%;
         }
+
     }
 
-    &__menu {
-
-        &-list {
-            display: flex;
-            align-items: center;
-            column-gap: fluid-to-laptop(100, 24);
-        }
-
-        &-item {
-            white-space: nowrap;
-        }
+    &__navigation {
 
         &-link {
+            color: $main_color;
             padding: fluid-to-laptop(10, 5);
-
             &.active {
                 color: $sub_color;
                 font-weight: 600;
@@ -82,39 +175,8 @@
 }
 
 
-@media (width > 1023px) {
-    .header {
-        &__overlay-menu-dialog {
-            display: contents;
-        }
-
-        &__menu {
-            padding: fluid-to-laptop(6, 3);
-        }
-    }
-
-}
-
 @media (width <= 1023px) {
-    .header {
-
-        .header__menu-list {
-                flex-direction: column;
-                justify-content: center;
-            }
-
-        &__menu {
-
-            &-list {
-                row-gap: 14px;
-            }
-
-            &-link {
-                color: $main_color;
-                font-size: 20px;
-            }
-        }
-
-
+    .menu__navigation {
+        display: none;
     }
 }

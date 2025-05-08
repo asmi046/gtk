@@ -1,4 +1,4 @@
-<button class="burger-button btn visible-tablet" type="button" aria-label="Открыть меню" title="Открыть меню"
+<button class="burger-button btn" type="button" aria-label="Открыть меню" title="Открыть меню"
     data-js-overlay-menu-burger-button="">
     <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
         <path class="burger-button__line burger-button__line--1"

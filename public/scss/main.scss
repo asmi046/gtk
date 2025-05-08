@@ -7,6 +7,9 @@
 @use "form/all-form";
 @use "elements/all-elements";
 @use "header";
+@use "advantages";
+@use "stages";
+@use "join-team";
 @use "footer";
 
 :root {
@@ -24,11 +27,11 @@ html {
 
 body{
     @include fluid-text(18, 14);
-
     font-family: $main_fonts;
     display: flex;
     flex-direction: column;
     background-color: $main_color;
+    min-height: 100vh;
 }
 
 footer,
@@ -42,7 +45,7 @@ main {
     flex-grow: 1;
 }
 
-.container, .header-container{
+.container, .large-container{
     width:100%;
     margin-inline: auto;
     padding-inline: var(--container-padding-x);
@@ -52,12 +55,19 @@ main {
     max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
 }
 
-.header-container {
+.large-container {
     max-width: calc(var(--header-container-width) + var(--container-padding-x) * 2);
 }
 
 .visually-hidden {
     @include visyally-hidden;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 img {
@@ -151,53 +161,60 @@ a {
     @include focus-visible;
 }
 
-    .contacts {
-        font-family: $interactive_fonts;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        color: $main_color;
+.contacts {
+    font-family: $main_fonts;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: $main_color;
 
-        &.call_phone {
-            font-size: fluid(24, 16);
-        }
-
-        &.sand_email {
-            font-size: fluid(20, 14);
-        }
+    &.call_phone {
+        font-size: fluid(24, 16);
     }
 
-
-.main {
-    &__inner {
-        padding: var(--section-padding-y) 0;
-    }
-    &__title{
-        display: flex;
-        align-items: flex-end;
-        gap: 30px;
-        &-btn {
-            margin-bottom: 24px;
-        }
-    }
-
-    &__content{
-        --mainContentColumns: 3;
-
-        display: grid;
-        grid-template-columns: repeat(var(--mainContentColumns), 1fr);
-        gap: fluid(170,20);
-
-        &-item{
-
-
-            &--number {
-                font-size: fluid(116, 24);
-            }
-
-            &--text{
-                font-size: fluid(18, 16);
-            }
-        }
+    &.sand_email {
+        font-size: fluid(20, 14);
     }
 }
+
+
+.section-title {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.section-title::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: $sub_color;
+    margin-left: 20px;
+    margin-bottom: 0.45em;
+}
+
+// СТИЛИ ДЛЯ MAIN
+
+
+.clients__inner {
+    padding-block: 32px;
+    gap: 30px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto !important;
+
+}
+
+.swiper-slide img {
+    max-width: 180px;
+    height: auto;
+}
+
+
+
+

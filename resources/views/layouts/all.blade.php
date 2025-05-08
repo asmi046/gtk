@@ -25,9 +25,7 @@
 
 
     <main id="main">
-        <div class="container">
-            @yield('main')
-        </div>
+        @yield('main')
     </main>
 
     <x-footer></x-footer>

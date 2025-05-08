@@ -1,0 +1,75 @@
+@use "helpers/" as *;
+.advantages {
+    &__inner {
+        padding-block: 0;
+
+        &--bg {
+            background-color: $sub_color;
+            padding-block: fluid(67, 20) fluid(127, 40);
+        }
+    }
+
+    &__title {
+        color: $main_color;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__form {
+        width: 100%;
+        top: fluid(-79, -43);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 18px;
+        padding: 32px;
+        max-width: 380px;
+        background-color: #E6E7E8;
+
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding-top: 50px;
+
+        &-item {
+            max-width: 300px;
+        }
+
+        &-head {
+            position: relative;
+            line-height: 1;
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 40%;
+                background-color: $sub_color;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        &-number {
+            font-size: fluid(62, 25);
+            color: $sub_color;
+        }
+
+        &-title {
+            text-transform: lowercase;
+        }
+
+    }
+}

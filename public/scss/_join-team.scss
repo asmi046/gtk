@@ -1,0 +1,59 @@
+@use "helpers/" as *;
+.join__team {
+
+    &-content {
+        display: flex;
+        gap: 10px;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: fluid-to-laptop(50, 15);
+        &--bg {
+            background-color: $form_join_color;
+        }
+    }
+
+    &-label {
+
+        &--custom {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+
+            input:checked + .join__team-checkbox--custom::after {
+                content: "";
+                position: absolute;
+                left: 5px;
+                top: 0px;
+                width: 6px;
+                height: 10px;
+                border: solid green;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &-input {
+        width: 80%;
+    }
+
+    &-checkbox {
+        &--custom {
+            position: relative;
+            @include square(17px);
+            display: inline-block;
+            border: 1px solid transparent;
+            background: white;
+            transition: background 0.2s ease;
+        }
+
+    }
+
+    &-button {
+        max-width: 275px;
+    }
+}
