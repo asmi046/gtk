@@ -1,6 +1,8 @@
 @use "helpers/" as *;
 .join__team {
-
+    background-image: url('../img/line-join-team.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     &-content {
         display: flex;
         gap: 10px;
@@ -49,11 +51,31 @@
             border: 1px solid transparent;
             background: white;
             transition: background 0.2s ease;
+            flex-shrink: 0;
         }
 
     }
 
     &-button {
         max-width: 275px;
+    }
+}
+
+
+@media (width <= 768px) {
+    .join__team {
+
+        &-img {
+            display: none;
+        }
+
+        &-form {
+            flex: 1;
+        }
+
+        &-input {
+            width: 100%;
+        }
+
     }
 }

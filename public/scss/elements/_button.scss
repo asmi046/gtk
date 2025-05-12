@@ -11,8 +11,8 @@ button,
     line-height: 1;
     font-family: $main_fonts;
     font-size: 16px;
-
-    &:hover {
+    user-select: none;
+    &:not([class]):hover {
         background-color: $button_hover;
     }
 }
@@ -58,7 +58,6 @@ button,
 
     padding: 0;
     border: none;
-    border-radius: 6px;
 
     @include hover {
         background-color: $button_hover;

@@ -36,8 +36,8 @@
                 </div>
             </div>
             <div class="swiper-nav">
-                <button class="swiper-prev btn">←</button>
-                <button class="swiper-next btn">→</button>
+                <button class="swiper-prev swiper-btn" aria-label="Предыдущий слайд"></button>
+                <button class="swiper-next swiper-btn" aria-label="Следующий слайд"></button>
             </div>
         </div>
     </div>

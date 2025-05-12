@@ -41,7 +41,6 @@ class OverlayMenu {
 
     toggleMenu() {
         this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
-        document.documentElement.classList.toggle(this.stateClasses.isLock);
 
         if (this.isDialog) {
             this.dialogElement[this.dialogElement.open ? 'close' : 'show']();
@@ -59,7 +58,6 @@ class OverlayMenu {
 
     closeMenu() {
         this.burgerButtonElement.classList.remove(this.stateClasses.isActive);
-        document.documentElement.classList.remove(this.stateClasses.isLock);
 
         if (this.isDialog) {
             this.dialogElement.close();

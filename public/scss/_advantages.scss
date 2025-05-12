@@ -1,12 +1,28 @@
 @use "helpers/" as *;
 .advantages {
+    position: relative;
     &__inner {
-        padding-block: 0;
-
+        padding-block: 0 50px;
         &--bg {
+            position: relative;
             background-color: $sub_color;
-            padding-block: fluid(67, 20) fluid(127, 40);
+            background-image: url('../img/line-advantage.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-block: fluid(70, 40) fluid(90, 60);
+            z-index: 2;
         }
+    }
+
+    &__line--bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url('../img/line-advantage-2.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 
     &__title {
@@ -29,7 +45,7 @@
         padding: 32px;
         max-width: 380px;
         background-color: #E6E7E8;
-
+        z-index: 3;
     }
 
     &__list {
@@ -40,6 +56,9 @@
 
         &-item {
             max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
         }
 
         &-head {
@@ -48,8 +67,6 @@
             display: flex;
             align-items: flex-end;
             gap: 4px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
 
             &::after {
                 content: "";
@@ -57,12 +74,15 @@
                 height: 1px;
                 width: 40%;
                 background-color: $sub_color;
+                bottom: -50%;
                 left: 0;
-                bottom: 0;
+                translate: 0 50%;
             }
         }
 
         &-number {
+            font-family: $sub_fonts;
+            line-height: 0.9;
             font-size: fluid(62, 25);
             color: $sub_color;
         }
@@ -71,5 +91,50 @@
             text-transform: lowercase;
         }
 
+    }
+}
+
+
+@media (width <= 1244px) {
+    .advantages {
+
+        &__wrapper {
+            flex-direction: column-reverse;
+            gap: 30px;
+        }
+
+        &__inner {
+            padding-block: 0 25px;
+            &--bg {
+                padding-block: fluid(35, 60);
+            }
+        }
+
+        &__form {
+            position: static;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+            &-button {
+                max-width: 250px;
+            }
+        }
+
+        &__list {
+            padding-block: 50px;
+        }
+    }
+}
+
+@media (width <= 768px) {
+    .advantages {
+
+        &__list {
+            grid-template-columns: repeat(2,1fr);
+
+            &-item {
+                gap: 35px;
+            }
+        }
     }
 }

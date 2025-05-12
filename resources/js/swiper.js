@@ -1,23 +1,26 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+
+import 'swiper/scss';
+import 'swiper/scss/navigation';
 
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 'auto', // Автоподбор количества слайдов
-  spaceBetween: 40,
-  centeredSlides: true,
+    modules: [Navigation],
+  slidesPerView: 4,
+  speed: 400,
+  spaceBetween: 100,
   loop: true,
-
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 4
+        }
+    },
   navigation: {
     nextEl: '.swiper-next',
     prevEl: '.swiper-prev',
   },
 
-  breakpoints: {
-    320: {
-      spaceBetween: 20
-    },
-    1024: {
-      spaceBetween: 93
-    }
-  }
 });

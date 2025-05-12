@@ -11,4 +11,5 @@
             <x-advantage.list-advantage></x-advantage.list-advantage>
         </div>
     </div>
+    <div class="advantages__line--bg"></div>
 </section>

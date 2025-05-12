@@ -1,7 +1,7 @@
 <section class="join__team">
     <div class="container join__team-inner">
         <div class="join__team-content">
-            <div>
+            <div class="join__team-img">
                 <img src="{{ asset('img/join_team.webp') }}" alt="">
             </div>
             <form action="" class="join__team-form join__team-form--bg">

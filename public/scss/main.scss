@@ -10,6 +10,7 @@
 @use "advantages";
 @use "stages";
 @use "join-team";
+@use "swiper-client";
 @use "footer";
 
 :root {
@@ -31,18 +32,17 @@ body{
     display: flex;
     flex-direction: column;
     background-color: $main_color;
-    min-height: 100vh;
 }
 
 footer,
 section{
     width: 100%;
-    padding-top: $section_space;
-    padding-bottom: $section_space;
+    padding-block: $section_space;
 }
 
 main {
     flex-grow: 1;
+    width: 100%;
 }
 
 .container, .large-container{
@@ -183,38 +183,41 @@ a {
     display: flex;
     align-items: flex-end;
     width: 100%;
-}
 
-.section-title::after {
-    content: "";
-    flex-grow: 1;
-    height: 1px;
-    background: $sub_color;
-    margin-left: 20px;
-    margin-bottom: 0.45em;
-}
+    &::after{
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        background: $sub_color;
+        margin-left: 20px;
+        margin-bottom: 0.45em;
+    }
 
-// СТИЛИ ДЛЯ MAIN
-
-
-.clients__inner {
-    padding-block: 32px;
-    gap: 30px;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto !important;
-
-}
-
-.swiper-slide img {
-    max-width: 180px;
-    height: auto;
+    &.section-title--min {
+        &::after {
+            width: 65%;
+            flex-grow: 0;
+        }
+    }
 }
 
 
 
 
+
+@media (width <= 1244px) {
+
+    footer,
+    section {
+        padding-block: 25px;
+    }
+
+    .section-title {
+
+        &.section-title--min {
+            &::after {
+                width: 40%;
+            }
+        }
+    }
+}

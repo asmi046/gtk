@@ -21,8 +21,10 @@
 <footer class="footer">
     <div class="footer__inner container">
         <x-logo.logo src="img/logo-footer.svg"></x-logo.logo>
-        <x-menu-footer :items="$menuItems1"></x-menu-footer>
-        <x-menu-footer :items="$menuItems2"></x-menu-footer>
+        <div class="footer__navigation">
+            <x-menu-footer :items="$menuItems1"></x-menu-footer>
+            <x-menu-footer :items="$menuItems2"></x-menu-footer>
+        </div>
         <div class="footer__contacts contacts">
             <a class="call_phone" href="tel:+74712735400">+7 (4712) 73 54 00</a>
             <a class="sand_email" href="mailto:kursk@glavtk.ru">kursk@glavtk.ru</a>

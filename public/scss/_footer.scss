@@ -8,6 +8,12 @@
         align-items: start;
     }
 
+    &__navigation {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+    }
+
     &__menu {
 
         &-list {
