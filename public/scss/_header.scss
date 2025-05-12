@@ -50,10 +50,15 @@
     &__content {
         padding-block: fluid(50,10);
         display: grid;
-        grid-template-columns: repeat(4,17%);
+        grid-template-columns: repeat(3,19%);
         justify-content: center;
         gap: 30px;
         &-item {
+            &:last-child {
+                    grid-column: 1 / -1;
+                    margin: 0 auto;
+                }
+
             &--contacts {
                 display: flex;
                 flex-direction: column;
@@ -122,6 +127,7 @@
             @keyframes scrolling-header {
                 to {
                     background-color: rgba(40, 40, 40,0.4);
+                    padding-block: 10px;
                 }
             }
     &__inner {
@@ -180,19 +186,5 @@
 @media (width <= 1024px) {
     .menu__navigation {
         display: none;
-    }
-
-    .header {
-
-        &__content {
-            grid-template-columns: repeat(3,25%);
-
-            &-item {
-                &:first-child {
-                    grid-column: 1 / -1;
-                    margin: 0 auto;
-                }
-            }
-        }
     }
 }
