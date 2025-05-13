@@ -25,7 +25,7 @@
     <div class="header__wrapper">
         <div class="header__video-bg">
             <video autoplay muted loop playsinline>
-                <source src="{{ asset('assets/video/00_HomePage_Loop.mp4') }}">
+                <source src="{{ asset('assets/video/gtk.mp4') }}">
                 Ваш браузер не поддерживает видео.
             </video>
             <div class="header__video-overlay"></div>
@@ -33,7 +33,7 @@
         <div class="header__inner">
             <div class="container">
                 <div class="header__title">
-                    <h1>Производство<br>и поставка<br>Металлоконструкций</h1>
+                    <h1>Производство<br> и поставка <br>Металлоконструкций</h1>
                     <button type="button" class="btn header__title-btn">Скачать каталог</button>
                 </div>
             </div>

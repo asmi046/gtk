@@ -1,6 +1,16 @@
 @use "helpers/" as *;
 
 
+.clients {
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
 
 .swiper-btn {
     position: relative;
@@ -28,3 +38,5 @@
 .swiper-next {
     background-image: url('../img/next-icon.svg');
 }
+
+

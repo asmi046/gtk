@@ -77,7 +77,7 @@ img {
 }
 
 .logo {
-    width: fluid(300, 150);
+    max-width: 424px;
 }
 
 .map_in_page {
@@ -220,4 +220,27 @@ a {
             }
         }
     }
+}
+
+
+@media (width <= 768px) {
+    .section-title {
+
+        &.section-title--min {
+            &::after {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@media (width <= 480px) {
+    .section-title {
+
+            &.section-title--min {
+                &::after {
+                   display: none;
+                }
+            }
+        }
 }

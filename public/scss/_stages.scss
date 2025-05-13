@@ -147,14 +147,29 @@
     .stages {
 
         &__list {
+            padding-left: 0;
+            padding-top: 25px;
+            row-gap: 75px;
+            &-title {
+                padding-left: 0;
+            }
             &-item{
-
                 &::before {
-                        @include square(25px);
+                        @include square(30px);
                         font-size: 18px;
-                        transform: translate(calc(-50% - 5px), calc(-50% + 10px));
+                        border-radius: 0;
+                        top: -40px;
+                        left: 20px;
                     }
                 }
             }
         }
+}
+
+@media (width <= 480px) {
+    .stages {
+        &__list {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
 }
