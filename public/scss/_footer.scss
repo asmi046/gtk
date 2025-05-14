@@ -40,7 +40,7 @@
 }
 
 
-@media (width <= 768px) {
+@media (width <= 1024px) {
         .footer {
             &__inner {
                 flex-direction: column;
@@ -50,6 +50,10 @@
 
             &__navigation {
                 gap: 100px;
+            }
+
+            &__contacts {
+                align-items: center;
             }
         }
 }

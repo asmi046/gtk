@@ -37,6 +37,7 @@
                     <button type="button" class="btn header__title-btn">Скачать каталог</button>
                 </div>
             </div>
+            <hr>
             <div class="container">
                 <div class="header__content">
                     <div class="header__content-item">

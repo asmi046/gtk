@@ -21,6 +21,10 @@ class OverlayMenu {
         this.isDialog = this.dialogElement.tagName === 'DIALOG';
         this.handleOutsideClick = this.handleOutsideClick.bind(this);
 
+        this.overlayElement = document.createElement('div');
+        this.overlayElement.className = 'overlay-menu__overlay';
+        this.overlayElement.addEventListener('click', () => this.closeMenu());
+
         this.bindEvents();
     }
 
@@ -48,10 +52,24 @@ class OverlayMenu {
             this.dialogElement.classList.toggle(this.stateClasses.isActive);
         }
 
-        // Добавляем/убираем обработчик клика вне меню
         if (this.isOpen()) {
+            // Добавляем оверлей в DOM и активируем его
+            document.body.appendChild(this.overlayElement);
+            // Чтобы анимация сработала, добавим класс с задержкой
+            requestAnimationFrame(() => {
+                this.overlayElement.classList.add('is-active');
+            });
+
             document.addEventListener('click', this.handleOutsideClick);
         } else {
+            // Убираем класс и удаляем оверлей после анимации
+            this.overlayElement.classList.remove('is-active');
+            this.overlayElement.addEventListener('transitionend', () => {
+                if (!this.overlayElement.classList.contains('is-active') && this.overlayElement.parentNode) {
+                    this.overlayElement.parentNode.removeChild(this.overlayElement);
+                }
+            }, { once: true });
+
             document.removeEventListener('click', this.handleOutsideClick);
         }
     }
@@ -64,6 +82,13 @@ class OverlayMenu {
         } else {
             this.dialogElement.classList.remove(this.stateClasses.isActive);
         }
+
+        this.overlayElement.classList.remove('is-active');
+        this.overlayElement.addEventListener('transitionend', () => {
+            if (!this.overlayElement.classList.contains('is-active') && this.overlayElement.parentNode) {
+                this.overlayElement.parentNode.removeChild(this.overlayElement);
+            }
+        }, { once: true });
 
         document.removeEventListener('click', this.handleOutsideClick);
     }
