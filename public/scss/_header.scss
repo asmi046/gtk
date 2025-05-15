@@ -142,7 +142,7 @@
         margin-left: auto;
         width: 270px;
         height: 100%;
-        background-color: rgba(40, 40, 40, 0.6);
+        background-color: rgba(255, 255, 255, 0.979);
         border: none;
         transition-duration: 0.2s;
         transition-behavior: allow-discrete;
@@ -167,7 +167,7 @@
         padding: 5rem 1rem 0 0;
         text-align: right;
         &-link {
-            color: $main_color;
+            color: $black_color;
             padding: fluid-to-laptop(10, 5);
             &.active {
                 color: $sub_color;
