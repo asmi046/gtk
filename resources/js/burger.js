@@ -54,7 +54,7 @@ class OverlayMenu {
 
         if (this.isOpen()) {
             // Добавляем оверлей в DOM и активируем его
-            document.body.appendChild(this.overlayElement);
+            document.querySelector('.sticky-menu__inner').appendChild(this.overlayElement);
             // Чтобы анимация сработала, добавим класс с задержкой
             requestAnimationFrame(() => {
                 this.overlayElement.classList.add('is-active');

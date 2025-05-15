@@ -25,9 +25,6 @@
         @include abs-cover;
         z-index: 1;
         background: rgba(0, 0, 0, 0.4);
-        background-image: url('../img/line-header.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     &__inner {
@@ -55,8 +52,8 @@
         gap: 30px;
         &-item {
             &:last-child {
-                    grid-column: 1 / -1;
-                    margin: 0 auto;
+                    grid-column: 1;
+                    margin: 0;
                 }
 
             &--contacts {
@@ -141,6 +138,7 @@
     &__dialog {
         position: fixed;
         inset: 0;
+        z-index: 95;
         margin-left: auto;
         width: 270px;
         height: 100%;
@@ -181,13 +179,54 @@
 
     .burger-button {
         position: relative;
+        z-index: 100;
     }
 }
 
 
+//Утилитарные линии
+
+.hd__line {
+    position: absolute;
+    width: 2px;
+    height: calc(100vh + 300px);
+    background-color: $main_color;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    &.hd__line--left {
+        left: 10%;
+        rotate: 25deg;
+    }
+
+    &.hd__line--right {
+        right: 18%;
+        rotate: 20deg;
+    }
+
+    &.hd__line--vertical {
+        left: 30%;
+    }
+
+    &.hd__line--side1 {
+        right: 15.3%;
+        rotate: -21deg;
+
+    }
+
+    &.hd__line--side2 {
+        right: 19.2%;
+        rotate: -21deg;
+    }
+}
+
 @media (width <= 1024px) {
     .menu__navigation {
         display: none;
+    }
+
+    .logo__image {
+        max-width: 270px;
     }
 }
 
@@ -204,14 +243,6 @@
 
         &__content {
             grid-template-columns: repeat(2, 1fr);
-
-            &-item {
-
-                &:last-child {
-                    grid-column: 1;
-                    margin: 0;
-                }
-            }
         }
     }
 }

@@ -30,6 +30,11 @@
             </video>
             <div class="header__video-overlay"></div>
         </div>
+        <hr class="hd__line hd__line--left">
+        <hr class="hd__line hd__line--right">
+        <hr class="hd__line hd__line--vertical">
+        <hr class="hd__line hd__line--side1">
+        <hr class="hd__line hd__line--side2">
         <div class="header__inner">
             <div class="container">
                 <div class="header__title">
@@ -73,6 +78,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 </header>
