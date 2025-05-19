@@ -3,9 +3,10 @@
 namespace App\View\Components;
 
 use Closure;
-use Illuminate\Contracts\View\View;
-use Illuminate\View\Component;
 use App\Models\Partner;
+use Illuminate\View\Component;
+use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Cache;
 
 class PartnersSlider extends Component
 {
@@ -13,7 +14,9 @@ class PartnersSlider extends Component
 
     public function __construct()
     {
-        $this->partners = Partner::orderBy('sort_order')->get();
+        $this->partners = Cache::rememberForever('partners_in_main', function () {
+            return Partner::orderBy('order')->get();
+        });
     }
 
     /**
