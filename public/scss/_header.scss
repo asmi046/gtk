@@ -9,6 +9,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
 
     &__video-bg {
@@ -25,6 +26,10 @@
         @include abs-cover;
         z-index: 1;
         background: rgba(0, 0, 0, 0.4);
+        background-image: url('../img/left_bg.svg'), url('../img/line_bg.svg'), url('../img/righ_bg.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: bottom left, center center, bottom right;
+        background-size: contain, contain, contain;
     }
 
     &__inner {
@@ -184,41 +189,6 @@
 }
 
 
-//Утилитарные линии
-
-.hd__line {
-    position: absolute;
-    width: 2px;
-    height: calc(100vh + 300px);
-    background-color: $main_color;
-    top: 40%;
-    transform: translate(-50%, -50%);
-
-    &.hd__line--left {
-        left: 10%;
-        rotate: 25deg;
-    }
-
-    &.hd__line--right {
-        right: 18%;
-        rotate: 20deg;
-    }
-
-    &.hd__line--vertical {
-        left: 30%;
-    }
-
-    &.hd__line--side1 {
-        right: 15.3%;
-        rotate: -21deg;
-
-    }
-
-    &.hd__line--side2 {
-        right: 19.2%;
-        rotate: -21deg;
-    }
-}
 
 @media (width <= 1024px) {
     .menu__navigation {

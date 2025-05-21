@@ -30,11 +30,6 @@
             </video>
             <div class="header__video-overlay"></div>
         </div>
-        <hr class="hd__line hd__line--left">
-        <hr class="hd__line hd__line--right">
-        <hr class="hd__line hd__line--vertical">
-        <hr class="hd__line hd__line--side1">
-        <hr class="hd__line hd__line--side2">
         <div class="header__inner">
             <div class="container">
                 <div class="header__title">
@@ -42,7 +37,6 @@
                     <button type="button" class="btn header__title-btn">Скачать каталог</button>
                 </div>
             </div>
-            <hr>
             <div class="container">
                 <div class="header__content">
                     <div class="header__content-item">
