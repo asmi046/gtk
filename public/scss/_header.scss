@@ -28,8 +28,8 @@
         background: rgba(0, 0, 0, 0.4);
         background-image: url('../img/left_bg.svg'), url('../img/line_bg.svg'), url('../img/righ_bg.svg');
         background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: bottom left, center center, bottom right;
-        background-size: contain, contain, contain;
+        background-position: -10px, center center, bottom right;
+        background-size: contain, 100%, contain;
     }
 
     &__inner {
@@ -189,6 +189,13 @@
 }
 
 
+@media (width<= 1330px) {
+    .header {
+        &__video-overlay {
+            background-position: calc(100% - 80vw), center center, calc(100% + 7vw);
+        }
+    }
+}
 
 @media (width <= 1024px) {
     .menu__navigation {
@@ -213,6 +220,11 @@
 
         &__content {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__video-overlay {
+            background-image: url('../img/left_bg.svg');
+            background-position: bottom right;
         }
     }
 }
