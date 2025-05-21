@@ -4,12 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Partner extends Model
+class Advantage extends Model
 {
     protected $fillable = [
         'title',
-        'image',
+        'description',
         'order'
     ];
-
 }
