@@ -5,11 +5,12 @@
             </h2>
         </div>
     </div>
-    <div class="container ">
-        <div class="advantages__wrapper">
-            <x-advantage.form-advantage></x-advantage.form-advantage>
-            <x-advantage.list-advantage></x-advantage.list-advantage>
+    <div class="advantages__line--bg">
+        <div class="container ">
+            <div class="advantages__wrapper">
+                <x-advantage.form-advantage></x-advantage.form-advantage>
+                <x-advantage.list-advantage></x-advantage.list-advantage>
+            </div>
         </div>
     </div>
-    <div class="advantages__line--bg"></div>
 </section>
