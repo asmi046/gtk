@@ -15,6 +15,8 @@ class PartnerSeeder extends Seeder
     public function run(): void
     {
 
+        DB::table('partners')->truncate();
+
        $partners = [
             [
                 'title'=>'Газпром',

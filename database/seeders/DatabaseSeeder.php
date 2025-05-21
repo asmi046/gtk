@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call(
             [
                 PartnerSeeder::class,
-                AdvantageSeeder::class
+                AdvantageSeeder::class,
+                StageSeeder::class
             ]
         );
 
