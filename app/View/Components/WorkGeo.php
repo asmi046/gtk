@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Closure;
+use App\Models\Geograpy;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
@@ -15,8 +16,8 @@ class WorkGeo extends Component
      */
     public function __construct()
     {
-        $this->points = Cache::rememberForever('contacts_banner', function () {
-            return Contact::whereIn('name', ['phone', 'email'])->get()->keyBy('name');
+        $this->points = Cache::rememberForever('geo_in_map', function () {
+            return Geograpy::all();
         });
     }
 

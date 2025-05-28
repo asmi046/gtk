@@ -1,10 +1,12 @@
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script>
-
+        var points = {!! $points->toJson() !!}
         ymaps.ready(init);
 
+        console.log(points)
+
         function init () {
-            let centerMap =[54.536516040970554,82.47927073437499]
+            let centerMap =[55.715251431239594,37.60836008984376]
             var myMap = new ymaps.Map("map_in_page", {
                 // Координаты центра карты
                 center: centerMap,
@@ -23,19 +25,25 @@
                 preset: 'islands#greenClusterIcons',
             });
 
-            myGeoObjects = new ymaps.Placemark([54.536516040970554,82.47927073437499],
-                {
-                    hintContent: '<div class="map-hint"></div>',
-                    balloonContent: '<div class="map-hint"><b></b></div>',
-                }, {
-                    preset: 'islands#icon',
-                    iconColor: '#2E85B6'
-                }
+            for (const property in points) {
+                myGeoObjects = new ymaps.Placemark(points[property].geo.split(','),
+                    {
+                        hintContent: '<div class="map-hint">'+points[property].name+'</div>',
+                        balloonContent: '<div class="map-hint"><b>'+points[property].name+'</b></div>',
+                    }, {
+                        iconLayout: 'default#image', // Тип иконки
+                        iconImageHref: '{{ asset("img/pin.svg") }}', // Ссылка на иконку
+                        iconImageSize: [40, 40], // Размер
+                        iconImageOffset: [-20, -20] // Смещение'
+                    }
 
-            );
-            clusterer.add(myGeoObjects);
+                );
 
-            myMap.geoObjects.add(clusterer);
+                myMap.geoObjects.add(myGeoObjects);
+            }
+
+
+
             // Отключим zoom
             myMap.behaviors.disable('scrollZoom');
 
