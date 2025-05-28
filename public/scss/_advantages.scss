@@ -81,12 +81,15 @@
         &-number {
             font-family: $sub_fonts;
             line-height: 0.9;
-            font-size: fluid(62, 25);
+            // font-size: fluid(62, 25);
+            font-size:  64px;
             color: $sub_color;
+            margin-right: 10px;
         }
 
         &-title {
             text-transform: lowercase;
+            font-size: 28px;
         }
 
     }

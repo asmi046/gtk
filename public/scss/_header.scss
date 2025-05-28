@@ -76,11 +76,13 @@
 
             &--number {
                 line-height: 1;
-               span {
+
                     font-size: fluid(116, 20);
                     font-family: $sub_fonts;
                     font-weight: 700;
-               }
+                span {
+                    font-size: 28px;
+                }
             }
 
             &--text {
