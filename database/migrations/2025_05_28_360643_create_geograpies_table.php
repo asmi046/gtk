@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('geograpies', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name')->comment('Имя точки');
+            $table->string('geo')->comment('Координаты');
+            $table->text('description')->nullable()->comment('Описание');
         });
     }
 
