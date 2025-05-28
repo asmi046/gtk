@@ -5,7 +5,7 @@
             <swiper-container id="ptn_swiper" init="false">
                 @foreach ($partners as $partner)
                     <swiper-slide>
-                        <img src="{{ asset('img/' . $partner->image) }}" alt="{{ $partner->title }}">
+                        <img src="{{ Storage::url($partner->image) }}" alt="{{ $partner->title }}">
                     </swiper-slide>
                 @endforeach
             </swiper-container>
