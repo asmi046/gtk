@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace App\MoonShine\Layouts;
 
 use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\ContactResource;
+
+use MoonShine\MenuManager\MenuItem;
+
 
 use MoonShine\Laravel\Layouts\AppLayout;
 use MoonShine\ColorManager\ColorManager;
@@ -46,6 +50,7 @@ final class MoonShineLayout extends AppLayout
     {
         return [
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
+            MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
             ...parent::menu(),
         ];
     }

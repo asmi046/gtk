@@ -6,6 +6,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\MoonShineUserResource;
 use MoonShine\Laravel\DependencyInjection\MoonShine;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
@@ -27,6 +28,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,
                 MenuResource::class,
+                ContactResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

@@ -18,26 +18,26 @@ class ContactSeeder extends Seeder
             [
                 [
                     'name' => 'site_name',
-                    'title' => 'ГлавТехКонструкция - изготовление металоконструкций',
-                    'value' => 'СвайМастер',
+                    'title' => 'Имя сайта',
+                    'value' => 'Главтехконструкция',
                 ],
 
                 [
                     'name' => 'phone',
                     'title' => 'Телефон',
-                    'value' => '+7 (4712) 73 54 00',
+                    'value' => '+7 (4712) 735-400',
                 ],
 
                 [
                     'name' => 'tg_lnk',
                     'title' => 'Ссылка  на Телеграм',
-                    'value' => '#',
+                    'value' => 'tg://resolve?domain=IBEX_IBEX',
                 ],
 
                 [
                     'name' => 'ws_lnk',
                     'title' => 'Ссылка  на WhatsApp',
-                    'value' => '#',
+                    'value' => 'https://wa.me/79019969575',
                 ],
 
                 [
@@ -47,15 +47,15 @@ class ContactSeeder extends Seeder
                 ],
 
                 [
-                    'name' => 'email',
-                    'title' => 'E-mail',
-                    'value' => 'kursk@glavtk.ru',
+                    'name' => 'work_time',
+                    'title' => 'Время работы',
+                    'value' => 'Пн-Пт 09:00 - 18:00 Сб-Вс 10:00 - 15:00',
                 ],
 
                 [
-                    'name' => 'email_2',
-                    'title' => 'E-mail 2',
-                    'value' => 'sale@glavtk.ru',
+                    'name' => 'email',
+                    'title' => 'E-mail',
+                    'value' => 'kursk@glavtk.ru',
                 ],
 
                 [
@@ -71,15 +71,15 @@ class ContactSeeder extends Seeder
                 ],
 
                 [
-                    'name' => 'kpp',
-                    'title' => 'КПП',
-                    'value' => '461101001',
-                ],
-
-                [
                     'name' => 'ogrn',
                     'title' => 'ОГРН',
                     'value' => '1174632000190',
+                ],
+
+                [
+                    'name' => 'kpp',
+                    'title' => 'КПП',
+                    'value' => '461101001',
                 ],
 
                 [
@@ -91,19 +91,25 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'ks',
                     'title' => 'К/С',
-                    'value' => '30101810220070000800',
+                    'value' => '30101810220070000800 ',
                 ],
 
                 [
                     'name' => 'bik',
                     'title' => 'БИК',
-                    'value' => '042007800',
+                    'value' => '042007800 ',
+                ],
+
+                [
+                    'name' => 'bank',
+                    'title' => 'Банк',
+                    'value' => 'Филиал «Газпромбанк» (АО) «Центрально-Черноземный» ',
                 ],
 
                 [
                     'name' => 'geo',
                     'title' => 'Кординаты',
-                    'value' => '51.65143411037333,36.04607707406614',
+                    'value' => '51.65145413210463,36.04618436242675',
                 ],
 
             ]
