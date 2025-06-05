@@ -22,8 +22,22 @@
     <div class="footer__inner container">
         <x-logo.logo src="img/logo-footer.svg"></x-logo.logo>
         <div class="footer__navigation">
-            <x-menu-footer :items="$menuItems1"></x-menu-footer>
-            <x-menu-footer :items="$menuItems2"></x-menu-footer>
+
+            <nav class="footer__menu">
+                <h3>Металоконструкции</h3>
+                <ul class="footer__menu-list">
+                    <x-menues.puncts name="Меню в металоконструкции" />
+                </ul>
+            </nav>
+
+            <nav class="footer__menu">
+                <h3>Другая продукция</h3>
+                <ul class="footer__menu-list">
+                    <x-menues.puncts name="Другая продукция" />
+                </ul>
+            </nav>
+
+
         </div>
         <div class="footer__contacts contacts">
             <a class="call_phone" href="tel:+74712735400">+7 (4712) 73 54 00</a>

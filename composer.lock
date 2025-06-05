@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "asmi046/site_skelet",
-            "version": "1.0.35",
+            "version": "1.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/asmi046/site_skelet.git",
-                "reference": "b038d2d1ea36a91872cbbb71ce760aa2b11f55c9"
+                "reference": "4884bbefc311fa96aa4da17f018226cfcb2f293a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/asmi046/site_skelet/zipball/b038d2d1ea36a91872cbbb71ce760aa2b11f55c9",
-                "reference": "b038d2d1ea36a91872cbbb71ce760aa2b11f55c9",
+                "url": "https://api.github.com/repos/asmi046/site_skelet/zipball/4884bbefc311fa96aa4da17f018226cfcb2f293a",
+                "reference": "4884bbefc311fa96aa4da17f018226cfcb2f293a",
                 "shasum": ""
             },
             "require": {
@@ -48,9 +48,9 @@
             ],
             "support": {
                 "issues": "https://github.com/asmi046/site_skelet/issues",
-                "source": "https://github.com/asmi046/site_skelet/tree/1.0.35"
+                "source": "https://github.com/asmi046/site_skelet/tree/1.0.36"
             },
-            "time": "2025-06-05T15:59:58+00:00"
+            "time": "2025-06-05T18:09:07+00:00"
         },
         {
             "name": "brick/math",

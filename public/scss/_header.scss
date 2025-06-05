@@ -112,13 +112,15 @@
 
     &-list {
         display: flex;
-        column-gap: fluid-to-laptop(60,15);
+        column-gap: 20px;
     }
 
+    li,
     &-item {
         white-space: nowrap;
     }
 
+    li a,
     &-link {
         color: $main_color;
         padding: fluid-to-laptop(10, 5);

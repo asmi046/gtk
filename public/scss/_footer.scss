@@ -16,16 +16,24 @@
 
     &__menu {
 
+        h3 {
+            font-size: 28px;
+            color:white;
+            margin-bottom: 20px;
+        }
+
         &-list {
                 display: flex;
                 flex-direction: column;
-                row-gap: 13px;
+                row-gap: 5px;
             }
 
+            li,
             &-item {
                 white-space: nowrap;
             }
 
+            li a,
             &-link {
                 color: $main_color;
                 &.active {
@@ -54,6 +62,25 @@
 
             &__contacts {
                 align-items: center;
+            }
+        }
+}
+
+@media (width <= 768px) {
+        .footer {
+            &__inner {
+                justify-content: start;
+                align-items: start;
+            }
+
+            &__navigation {
+                flex-direction: column;
+                gap:50px
+            }
+
+
+            &__contacts {
+                align-items: start;
             }
         }
 }
