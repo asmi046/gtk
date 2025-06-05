@@ -4,7 +4,7 @@
 @section('description', 'Главтехконструкция официальный сайт')
 
 @section('main')
-    <x-header></x-header>
+    <x-headers.header/>
     <x-advantage></x-advantage>
     <x-stages-section></x-stages-section>
     <x-join-team-section></x-join-team-section>

@@ -29,8 +29,4 @@ class IndexController extends Controller
     public function vacancies(){
         return 'Вакансии';
     }
-
-    public function contacts(){
-        return 'Контакты';
-    }
 }

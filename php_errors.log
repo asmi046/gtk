@@ -1,0 +1,56 @@
+[05-Jun-2025 16:05:35 UTC] PHP Warning:  require(C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../symfony/clock/Resources/now.php): Failed to open stream: No such file or directory in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../symfony/clock/Resources/now.php' (include_path='.;C:\php\pear') in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php:41
+Stack trace:
+#0 C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php(45): {closure}('2203a247e6fda86...', 'C:\\Users\\asmi\\D...')
+#1 C:\Users\asmi\Documents\GitHub\gtk\vendor\autoload.php(25): ComposerAutoloaderInit88970a0117c062eed55fa8728fc43833::getLoader()
+#2 Command line code(1): require_once('C:\\Users\\asmi\\D...')
+#3 {main}
+  thrown in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:37 UTC] PHP Warning:  require(C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../laravel/framework/src/Illuminate/Collections/functions.php): Failed to open stream: No such file or directory in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../laravel/framework/src/Illuminate/Collections/functions.php' (include_path='.;C:\php\pear') in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php:41
+Stack trace:
+#0 C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php(45): {closure}('476ca15b8d69b04...', 'C:\\Users\\asmi\\D...')
+#1 C:\Users\asmi\Documents\GitHub\gtk\vendor\autoload.php(25): ComposerAutoloaderInit88970a0117c062eed55fa8728fc43833::getLoader()
+#2 Command line code(1): require_once('C:\\Users\\asmi\\D...')
+#3 {main}
+  thrown in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:39 UTC] PHP Warning:  require(C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../laravel/framework/src/Illuminate/Collections/functions.php): Failed to open stream: No such file or directory in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../laravel/framework/src/Illuminate/Collections/functions.php' (include_path='.;C:\php\pear') in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php:41
+Stack trace:
+#0 C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php(45): {closure}('476ca15b8d69b04...', 'C:\\Users\\asmi\\D...')
+#1 C:\Users\asmi\Documents\GitHub\gtk\vendor\autoload.php(25): ComposerAutoloaderInit88970a0117c062eed55fa8728fc43833::getLoader()
+#2 Command line code(1): require_once('C:\\Users\\asmi\\D...')
+#3 {main}
+  thrown in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:50 UTC] PHP Warning:  require(C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php): Failed to open stream: No such file or directory in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php' (include_path='.;C:\php\pear') in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php:41
+Stack trace:
+#0 C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php(45): {closure}('c89f87fd3f4c9ac...', 'C:\\Users\\asmi\\D...')
+#1 C:\Users\asmi\Documents\GitHub\gtk\vendor\autoload.php(25): ComposerAutoloaderInit88970a0117c062eed55fa8728fc43833::getLoader()
+#2 Command line code(1): require_once('C:\\Users\\asmi\\D...')
+#3 {main}
+  thrown in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:54 UTC] PHP Warning:  require(C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php): Failed to open stream: No such file or directory in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php' (include_path='.;C:\php\pear') in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php:41
+Stack trace:
+#0 C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php(45): {closure}('c89f87fd3f4c9ac...', 'C:\\Users\\asmi\\D...')
+#1 C:\Users\asmi\Documents\GitHub\gtk\vendor\autoload.php(25): ComposerAutoloaderInit88970a0117c062eed55fa8728fc43833::getLoader()
+#2 Command line code(1): require_once('C:\\Users\\asmi\\D...')
+#3 {main}
+  thrown in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:58 UTC] PHP Warning:  require(C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php): Failed to open stream: No such file or directory in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php' (include_path='.;C:\php\pear') in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php:41
+Stack trace:
+#0 C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php(45): {closure}('c89f87fd3f4c9ac...', 'C:\\Users\\asmi\\D...')
+#1 C:\Users\asmi\Documents\GitHub\gtk\vendor\autoload.php(25): ComposerAutoloaderInit88970a0117c062eed55fa8728fc43833::getLoader()
+#2 Command line code(1): require_once('C:\\Users\\asmi\\D...')
+#3 {main}
+  thrown in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:58 UTC] PHP Warning:  require(C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php): Failed to open stream: No such file or directory in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41
+[05-Jun-2025 16:05:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\asmi\Documents\GitHub\gtk\vendor\composer/../moonshine/moonshine/src/Laravel/src/helpers.php' (include_path='.;C:\php\pear') in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php:41
+Stack trace:
+#0 C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php(45): {closure}('c89f87fd3f4c9ac...', 'C:\\Users\\asmi\\D...')
+#1 C:\Users\asmi\Documents\GitHub\gtk\vendor\autoload.php(25): ComposerAutoloaderInit88970a0117c062eed55fa8728fc43833::getLoader()
+#2 Command line code(1): require_once('C:\\Users\\asmi\\D...')
+#3 {main}
+  thrown in C:\Users\asmi\Documents\GitHub\gtk\vendor\composer\autoload_real.php on line 41

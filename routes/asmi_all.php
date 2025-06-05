@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\ContactsController;
     use Illuminate\Support\Facades\Route;
 
     use App\Http\Controllers\IndexController;
@@ -10,5 +12,7 @@
         Route::get('/services','services')->name('services');
         Route::get('/news', 'news')->name('news');
         Route::get('/vacancies','vacancies')->name('vacancies');
-        Route::get('/contacts','contacts')->name('contacts');
+
     });
+
+    Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
