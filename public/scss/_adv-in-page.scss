@@ -1,0 +1,62 @@
+@use "helpers/" as *;
+
+    .advantages-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      position: relative;
+    }
+
+    .advantage-item {
+      background-color: #ffffff;
+      padding: 1.5rem 1.5rem 2rem;
+      border: 1px solid #E6E7E8;
+      border-left: 4px solid #C52026;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 0; /* Прямые углы */
+      overflow: hidden;
+      position: relative;
+    }
+
+    .advantage-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .advantage-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 0.5rem;
+    }
+
+    .advantage-desc {
+      font-size: 0.95rem;
+      color: #000000;
+      line-height: 1.5;
+    }
+
+    .advantage-number {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      color: #EBEBEC;
+      font-weight: bold;
+      font-size: 1.2rem;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 992px) {
+      .advantages-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .advantages-list {
+        grid-template-columns: 1fr;
+      }
+    }

@@ -12,6 +12,7 @@ use App\Http\Controllers\ContactsController;
         Route::get('/services','services')->name('services');
         Route::get('/news', 'news')->name('news');
         Route::get('/vacancies','vacancies')->name('vacancies');
+        Route::get('/lab','lab')->name('lab');
 
     });
 

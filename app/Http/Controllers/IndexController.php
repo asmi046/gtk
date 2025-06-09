@@ -29,4 +29,8 @@ class IndexController extends Controller
     public function vacancies(){
         return 'Вакансии';
     }
+
+    public function lab(){
+        return view('lab');
+    }
 }

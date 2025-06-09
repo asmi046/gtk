@@ -8,10 +8,14 @@
 @use "elements/all-elements";
 @use "header";
 @use "advantages";
+@use "adv-in-page";
 @use "stages";
 @use "join-team";
 @use "swiper-client";
 @use "footer";
+@use "icon-section";
+@use "text-styles";
+
 
 :root {
     --container-width: #{fluid-to-laptop($container_desktop_width, $container_laptop_width)};
