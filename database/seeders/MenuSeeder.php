@@ -61,7 +61,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Контакты',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/contacts",
             ],
 
         ];
@@ -134,7 +134,7 @@ class MenuSeeder extends Seeder
             ],
             [
                 'menu_name' => 'Другая продукция',
-                'title' => 'фасады',
+                'title' => 'Фасады',
                 'order' => 1,
                 'lnk' => "#",
             ],

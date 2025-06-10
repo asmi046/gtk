@@ -8,12 +8,15 @@ use Illuminate\View\Component;
 
 class HeaderPage extends Component
 {
+    public string $title;
+    public string $subtitle;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($title = 'Страница', $subtitle = '')
     {
-        //
+        $this->title = $title;
+        $this->subtitle = $subtitle;
     }
 
     /**

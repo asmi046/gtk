@@ -6,6 +6,7 @@ namespace App\MoonShine\Layouts;
 
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\ContactResource;
+use App\MoonShine\Resources\PageResource;
 
 use MoonShine\MenuManager\MenuItem;
 
@@ -51,6 +52,7 @@ final class MoonShineLayout extends AppLayout
         return [
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
             MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
+            MenuItem::make("Страницы", PageResource::class)->icon('document-text'),
             ...parent::menu(),
         ];
     }

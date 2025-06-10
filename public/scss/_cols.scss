@@ -1,0 +1,14 @@
+.colls {
+    display: flex;
+    justify-content: space-between;
+
+    .col {
+        flex:1
+    }
+}
+
+@media (max-width: 520px) {
+    .colls {
+        flex-direction: column;
+    }
+}

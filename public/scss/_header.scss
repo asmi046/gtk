@@ -19,6 +19,9 @@
                 color:white;
                 margin-bottom: 50px;
 
+                h1 {
+                    font-size: 54px;
+                }
                 .button {
                     margin-top: 20px;
                 }
@@ -154,6 +157,7 @@
 
     &__page {
         background-color: rgba(40, 40, 40,0.4);
+
     }
 
     &__inner {

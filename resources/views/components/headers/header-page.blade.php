@@ -10,10 +10,14 @@
     </div>
 
     <div class="container">
-        <h1>Контакты</h1>
-        <p class="subtitle">
-            Готовы ответить на все ваши вопросы, свяжитесь с нами удобным для Вас способом.
-        </p>
+        <h1>{{ $title }}</h1>
+
+        @if(empty($subtitle))
+            <p class="subtitle">
+                {{ $subtitle }}
+            </p>
+        @endif
+
         <a href="#" class="button">Скачать каталог</a>
     </div>
 </div>
