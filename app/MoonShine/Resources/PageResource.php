@@ -61,6 +61,7 @@ class PageResource extends ModelResource
                 Tab::make('Основная информация', [
                     ID::make(),
                     Text::make("Заголовок", 'title'),
+                    Text::make("Подзаголовок", 'sub_title'),
                     Slug::make("Ссылка", 'slug'),
                     BelongsTo::make("Родительская", 'parent_page', formatted: 'title', resource: PageResource::class),
                     Text::make("Шаблон", 'template'),

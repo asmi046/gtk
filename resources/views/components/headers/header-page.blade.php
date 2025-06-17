@@ -12,7 +12,7 @@
     <div class="container">
         <h1>{{ $title }}</h1>
 
-        @if(empty($subtitle))
+        @if(!empty($subtitle))
             <p class="subtitle">
                 {{ $subtitle }}
             </p>

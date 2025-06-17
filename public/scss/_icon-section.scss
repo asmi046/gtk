@@ -13,6 +13,21 @@
       border: 1px solid #E6E7E8;
       /* Прямые углы */
       border-radius: 0;
+
+        .icon {
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #C52026;
+            border-radius: 50%; /* Иконка остается круглой */
+            img {
+                width:60%;
+                height: auto;
+            }
+        }
     }
 
     .icon-card:hover {
@@ -20,16 +35,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .icon {
-      margin-bottom: 1rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 60px;
-      height: 60px;
-      background-color: #C52026;
-      border-radius: 50%; /* Иконка остается круглой */
-    }
+
 
     .icon svg {
       width: 30px;

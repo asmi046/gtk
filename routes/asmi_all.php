@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\ProductsController;
     use Illuminate\Support\Facades\Route;
 
     use App\Http\Controllers\IndexController;
@@ -16,6 +17,9 @@ use App\Http\Controllers\ContactsController;
         Route::get('/lab','lab')->name('lab');
 
     });
+
+    Route::get('/products', [ProductsController::class, "index"])->name('products');
+    Route::get('/products/{slug}', [ProductsController::class, "page"])->name('products_page');
 
     Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
     Route::get('/page/{slug}', [PageController::class, "index"])->name('page');
