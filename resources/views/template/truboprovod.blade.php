@@ -38,7 +38,18 @@
                 @foreach ( $sections['Индивидуальный подход к каждому проекту'] as $item)
                     <x-cards.icon :item="$item"></x-cards.icon>
                 @endforeach
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="container">
+            <h2 class="section-title clients__title">Примеры наших работ</h2>
+            <div class="gallery-grid">
+
+                @foreach ($data->images as $item)
+                    <x-cards.galery :item="$item"></x-cards.galery>
+                @endforeach
 
             </div>
         </div>

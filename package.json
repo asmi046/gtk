@@ -41,6 +41,7 @@
     },
     "dependencies": {
         "@vitejs/plugin-vue": "^5.2.3",
+        "fslightbox": "^3.6.1",
         "swiper": "^11.2.6",
         "v-slim-mask": "^1.0.24",
         "vue": "^3.5.16",
