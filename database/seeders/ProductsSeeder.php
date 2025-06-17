@@ -16,19 +16,19 @@ class ProductsSeeder extends Seeder
     public function run(): void
     {
 
-        Storage::disk('public')->put("products/truba_1.webp", file_get_contents(public_path('tmp_data\product\truba_1.webp')), 'public');
-        Storage::disk('public')->put("products/truba_2.webp", file_get_contents(public_path('tmp_data\product\truba_2.webp')), 'public');
-        Storage::disk('public')->put("products/truba_3.webp", file_get_contents(public_path('tmp_data\product\truba_3.webp')), 'public');
-        Storage::disk('public')->put("products/truba_4.webp", file_get_contents(public_path('tmp_data\product\truba_4.webp')), 'public');
-        Storage::disk('public')->put("products/truba_5.webp", file_get_contents(public_path('tmp_data\product\truba_5.webp')), 'public');
-        Storage::disk('public')->put("products/truba_6.webp", file_get_contents(public_path('tmp_data\product\truba_6.webp')), 'public');
-        Storage::disk('public')->put("products/truba_7.webp", file_get_contents(public_path('tmp_data\product\truba_7.webp')), 'public');
-        Storage::disk('public')->put("products/truba_8.webp", file_get_contents(public_path('tmp_data\product\truba_8.webp')), 'public');
-        Storage::disk('public')->put("products/truba_9.webp", file_get_contents(public_path('tmp_data\product\truba_9.webp')), 'public');
+        Storage::disk('public')->put("products/truba_1.webp", file_get_contents(public_path('tmp_data/product/truba_1.webp')), 'public');
+        Storage::disk('public')->put("products/truba_2.webp", file_get_contents(public_path('tmp_data/product/truba_2.webp')), 'public');
+        Storage::disk('public')->put("products/truba_3.webp", file_get_contents(public_path('tmp_data/product/truba_3.webp')), 'public');
+        Storage::disk('public')->put("products/truba_4.webp", file_get_contents(public_path('tmp_data/product/truba_4.webp')), 'public');
+        Storage::disk('public')->put("products/truba_5.webp", file_get_contents(public_path('tmp_data/product/truba_5.webp')), 'public');
+        Storage::disk('public')->put("products/truba_6.webp", file_get_contents(public_path('tmp_data/product/truba_6.webp')), 'public');
+        Storage::disk('public')->put("products/truba_7.webp", file_get_contents(public_path('tmp_data/product/truba_7.webp')), 'public');
+        Storage::disk('public')->put("products/truba_8.webp", file_get_contents(public_path('tmp_data/product/truba_8.webp')), 'public');
+        Storage::disk('public')->put("products/truba_9.webp", file_get_contents(public_path('tmp_data/product/truba_9.webp')), 'public');
 
-        Storage::disk('public')->put("products/calendar.svg", file_get_contents(public_path('tmp_data\product\calendar.svg')), 'public');
-        Storage::disk('public')->put("products/termometr.svg", file_get_contents(public_path('tmp_data\product\termometr.svg')), 'public');
-        Storage::disk('public')->put("products/val.svg", file_get_contents(public_path('tmp_data\product\val.svg')), 'public');
+        Storage::disk('public')->put("products/calendar.svg", file_get_contents(public_path('tmp_data/product/calendar.svg')), 'public');
+        Storage::disk('public')->put("products/termometr.svg", file_get_contents(public_path('tmp_data/product/termometr.svg')), 'public');
+        Storage::disk('public')->put("products/val.svg", file_get_contents(public_path('tmp_data/product/val.svg')), 'public');
 
         $data = [
             [

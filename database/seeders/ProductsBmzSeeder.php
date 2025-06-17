@@ -16,14 +16,14 @@ class ProductsBmzSeeder extends Seeder
     public function run(): void
     {
 
-        Storage::disk('public')->put("products/bmz_1.webp", file_get_contents(public_path('tmp_data\product\bmz_1.webp')), 'public');
-        Storage::disk('public')->put("products/bmz_2.webp", file_get_contents(public_path('tmp_data\product\bmz_2.webp')), 'public');
-        Storage::disk('public')->put("products/bmz_3.webp", file_get_contents(public_path('tmp_data\product\bmz_3.webp')), 'public');
-        Storage::disk('public')->put("products/bmz_4.webp", file_get_contents(public_path('tmp_data\product\bmz_4.webp')), 'public');
+        Storage::disk('public')->put("products/bmz_1.webp", file_get_contents(public_path('tmp_data/product/bmz_1.webp')), 'public');
+        Storage::disk('public')->put("products/bmz_2.webp", file_get_contents(public_path('tmp_data/product/bmz_2.webp')), 'public');
+        Storage::disk('public')->put("products/bmz_3.webp", file_get_contents(public_path('tmp_data/product/bmz_3.webp')), 'public');
+        Storage::disk('public')->put("products/bmz_4.webp", file_get_contents(public_path('tmp_data/product/bmz_4.webp')), 'public');
 
-        Storage::disk('public')->put("products/oil.svg", file_get_contents(public_path('tmp_data\product\oil.svg')), 'public');
-        Storage::disk('public')->put("products/indastry.svg", file_get_contents(public_path('tmp_data\product\indastry.svg')), 'public');
-        Storage::disk('public')->put("products/building.svg", file_get_contents(public_path('tmp_data\product\building.svg')), 'public');
+        Storage::disk('public')->put("products/oil.svg", file_get_contents(public_path('tmp_data/product/oil.svg')), 'public');
+        Storage::disk('public')->put("products/indastry.svg", file_get_contents(public_path('tmp_data/product/indastry.svg')), 'public');
+        Storage::disk('public')->put("products/building.svg", file_get_contents(public_path('tmp_data/product/building.svg')), 'public');
 
         $data = [
             [
