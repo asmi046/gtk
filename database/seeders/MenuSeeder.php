@@ -24,6 +24,13 @@ class MenuSeeder extends Seeder
 
             [
                 'menu_name' => 'Главное меню',
+                'title' => 'Продукция',
+                'order' => 1,
+                'lnk' => "/products",
+            ],
+
+            [
+                'menu_name' => 'Главное меню',
                 'title' => 'Теплицы',
                 'order' => 1,
                 'lnk' => "#",
@@ -32,13 +39,6 @@ class MenuSeeder extends Seeder
             [
                 'menu_name' => 'Главное меню',
                 'title' => 'Фасады',
-                'order' => 1,
-                'lnk' => "#",
-            ],
-
-            [
-                'menu_name' => 'Главное меню',
-                'title' => 'Лаборатория',
                 'order' => 1,
                 'lnk' => "#",
             ],

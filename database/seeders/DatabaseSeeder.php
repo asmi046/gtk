@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
             [
                 SeoDataSeeder::class,
                 ProductsSeeder::class,
+                ProductsBmzSeeder::class,
+
                 PageSeeder::class,
                 UserSeeder::class,
                 MenuSeeder::class,

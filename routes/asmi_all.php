@@ -19,7 +19,7 @@ use App\Http\Controllers\ProductsController;
     });
 
     Route::get('/products', [ProductsController::class, "index"])->name('products');
-    Route::get('/products/{slug}', [ProductsController::class, "page"])->name('products_page');
+    Route::get('/products/{slug}', [ProductsController::class, "page"])->name('product_page');
 
     Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
     Route::get('/page/{slug}', [PageController::class, "index"])->name('page');

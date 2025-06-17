@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
+    public function index() {
+        $data = Product::all();
+        return view('products', ['products' => $data]);
+    }
+
     public function page($slug) {
 
         $data = Product::where('slug', $slug)->firstOrFail();
