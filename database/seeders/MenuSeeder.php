@@ -54,7 +54,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Вакансии',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/vacancies",
             ],
 
             [
