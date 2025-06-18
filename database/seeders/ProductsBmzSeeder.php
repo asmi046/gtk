@@ -31,7 +31,7 @@ class ProductsBmzSeeder extends Seeder
                 'sub_title' => "Производство и поставка БМЗ под ключ. Срок изготовления — от 15 дней",
                 'slug' => Str::slug("Блочно-модульные здания"),
                 'img' => 'products/bmz_1.webp',
-                'description' => file_get_contents(public_path('tmp_data\product\bmz\main.html')),
+                'description' => file_get_contents(public_path('tmp_data/product/bmz/main.html')),
                 'template' => 'template.bmz',
                 'images' => json_encode([
                     [

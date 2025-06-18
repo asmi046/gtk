@@ -36,7 +36,7 @@ class ProductsSeeder extends Seeder
                 'sub_title' => "Изготавливаем нестандартные трубопроводы под нужды заказчика",
                 'slug' => Str::slug("Инженерные трубопроводы"),
                 'img' => 'products/truba_1.webp',
-                'description' => file_get_contents(public_path('tmp_data\product\truba\main.html')),
+                'description' => file_get_contents(public_path('tmp_data/product/truba/main.html')),
                 'template' => 'template.truboprovod',
                 'images' => json_encode([
                     [
