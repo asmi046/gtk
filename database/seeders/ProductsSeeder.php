@@ -40,35 +40,35 @@ class ProductsSeeder extends Seeder
                 'template' => 'template.truboprovod',
                 'images' => json_encode([
                     [
-                        'title' => "Изображение 1",
+                        'title' => "Труба",
                         'img' => "products/truba_1.webp",
                     ],
                     [
-                        'title' => "Изображение 2",
+                        'title' => "КуАЭС2 Сварка магистрального трубопровода",
                         'img' => "products/truba_2.webp",
                     ],
                     [
-                        'title' => "Изображение 3",
+                        'title' => "КуАЭС2 Магистральный трубопровод",
                         'img' => "products/truba_3.webp",
                     ],
                     [
-                        'title' => "Изображение 4",
+                        'title' => "КуАЭС2 Магистральный трубопровод",
                         'img' => "products/truba_4.webp",
                     ],
                     [
-                        'title' => "Изображение 5",
+                        'title' => "КуАЭС2 Магистральный трубопровод",
                         'img' => "products/truba_5.webp",
                     ],
                     [
-                        'title' => "Изображение 6",
+                        'title' => "КуАЭС2 Зимний трубопровод",
                         'img' => "products/truba_6.webp",
                     ],
                     [
-                        'title' => "Изображение 7",
+                        'title' => "КуАЭС2 Зимний трубопровод",
                         'img' => "products/truba_7.webp",
                     ],
                     [
-                        'title' => "Изображение 8",
+                        'title' => "КуАЭС2 Зимний трубопровод",
                         'img' => "products/truba_8.webp",
                     ],
                 ]),

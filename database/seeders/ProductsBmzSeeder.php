@@ -35,19 +35,19 @@ class ProductsBmzSeeder extends Seeder
                 'template' => 'template.bmz',
                 'images' => json_encode([
                     [
-                        'title' => "Изображение 1",
+                        'title' => "Сборный промышленный модуль с жилыми и бытовыми зонами",
                         'img' => "products/bmz_1.webp",
                     ],
                     [
-                        'title' => "Изображение 2",
+                        'title' => "Современный модульный комплекс",
                         'img' => "products/bmz_2.webp",
                     ],
                     [
-                        'title' => "Изображение 3",
+                        'title' => "Универсальный блочный дом с двухэтажной планировкой",
                         'img' => "products/bmz_3.webp",
                     ],
                     [
-                        'title' => "Изображение 4",
+                        'title' => "Промышленный модуль: функциональность для бизнеса и комфорта",
                         'img' => "products/bmz_4.webp",
                     ],
 
