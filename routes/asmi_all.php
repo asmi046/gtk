@@ -3,6 +3,7 @@
 use App\Http\Controllers\VacancyController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\MetalStructuresController;
     use Illuminate\Support\Facades\Route;
 
     use App\Http\Controllers\IndexController;
@@ -18,6 +19,9 @@ use App\Http\Controllers\ProductsController;
         Route::get('/lab','lab')->name('lab');
 
     });
+
+    Route::get('/metal-structures', [MetalStructuresController::class, "index"])->name('metal_structures');
+    Route::get('/metal-structures/{slug}', [MetalStructuresController::class, "page"])->name('metal_structures_page');
 
     Route::get('/products', [ProductsController::class, "index"])->name('products');
     Route::get('/products/{slug}', [ProductsController::class, "page"])->name('product_page');

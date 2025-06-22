@@ -19,7 +19,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Металоконструкции',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/metal-structures",
             ],
 
             [
@@ -59,6 +59,60 @@ class MenuSeeder extends Seeder
 
             [
                 'menu_name' => 'Главное меню',
+                'title' => 'Контакты',
+                'order' => 1,
+                'lnk' => "/contacts",
+            ],
+
+        ];
+
+        DB::table("menus")->insert($data);
+
+        $data = [
+            [
+                'menu_name' => 'Боковое меню',
+                'title' => 'Металоконструкции',
+                'order' => 1,
+                'lnk' => "/metal-structures",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
+                'title' => 'Продукция',
+                'order' => 1,
+                'lnk' => "/products",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
+                'title' => 'Теплицы',
+                'order' => 1,
+                'lnk' => "#",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
+                'title' => 'Фасады',
+                'order' => 1,
+                'lnk' => "#",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
+                'title' => 'Услуги',
+                'order' => 1,
+                'lnk' => "#",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
+                'title' => 'Вакансии',
+                'order' => 1,
+                'lnk' => "/vacancies",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
                 'title' => 'Контакты',
                 'order' => 1,
                 'lnk' => "/contacts",

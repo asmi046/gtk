@@ -16,7 +16,7 @@ class ProductsReservuarSeeder extends Seeder
     public function run(): void
     {
 
-        Storage::disk('public')->put("products/truba_1.webp", file_get_contents(public_path('tmp_data/product/truba_1.webp')), 'public');
+        Storage::disk('public')->put("products/emkost.webp", file_get_contents(public_path('tmp_data/product/emkost.webp')), 'public');
 
         Storage::disk('public')->put("products/calendar.svg", file_get_contents(public_path('tmp_data/product/calendar.svg')), 'public');
         Storage::disk('public')->put("products/termometr.svg", file_get_contents(public_path('tmp_data/product/termometr.svg')), 'public');
@@ -24,40 +24,35 @@ class ProductsReservuarSeeder extends Seeder
 
         $data = [
             [
-                'title' => "Ёмкости(Резервуары стальные)",
+                'title' => "Ёмкости (Резервуары стальные)",
                 'sub_title' => "Стальные резервуары от производителя: надёжность, которую можно доверить любому проекту",
                 'slug' => Str::slug("Резервуары стальные"),
-                'img' => 'products/reservuar_1.webp',
+                'img' => 'products/emkost.webp',
                 'description' => file_get_contents(public_path('tmp_data/product/reservuar/main.html')),
                 'template' => 'template.reservuar',
-                'images' => json_encode([
-                    [
-                        'title' => "Изображение 1",
-                        'img' => "products/truba_1.webp",
-                    ],
-                ]),
+                'images' => null,
 
                 'sections' => json_encode([
                     [
-                        'part' => 'Прочность и долговечность',
+                        'part' => 'Преимущества наших резервуаров',
                         'picture' => '',
-                        'title' => 'Устойчивы к перепадам давления и температур',
+                        'title' => 'Прочность и долговечность',
                         'sub_title' => '01',
-                        'content' => 'Резервуары изготавливаются из высококачественных сталей с усилением кольцами жёсткости и диафрагмами, обеспечивая устойчивость к подземному монтажу и высоким нагрузкам без риска деформации.',
+                        'content' => 'Устойчивы к перепадам давления и температур. Резервуары изготавливаются из высококачественных сталей с усилением кольцами жёсткости и диафрагмами, обеспечивая устойчивость к подземному монтажу и высоким нагрузкам без риска деформации.',
                     ],
                     [
-                        'part' => 'Контроль качества на 100%',
+                        'part' => 'Преимущества наших резервуаров',
                         'picture' => '',
-                        'title' => 'Адаптированы под сложный рельеф и погодные условия',
+                        'title' => 'Контроль качества на 100%',
                         'sub_title' => '02',
-                        'content' => 'Качество сварных швов подтверждается ультразвуковой проверкой — это наш приоритет и гарантия надежности для вас.',
+                        'content' => 'Адаптированы под сложный рельеф и погодные условия. Качество сварных швов подтверждается ультразвуковой проверкой — это наш приоритет и гарантия надежности для вас.',
                     ],
                     [
-                        'part' => 'Универсальность в деталях',
+                        'part' => 'Преимущества наших резервуаров',
                         'picture' => '',
-                        'title' => 'Монтируются как на улице, так и в помещениях',
+                        'title' => 'Универсальность в деталях',
                         'sub_title' => '03',
-                        'content' => 'Резервуары диаметром от 700 мм до 3,6 м и длиной до 12 м адаптируются под любые задачи — от компактных АЗС до промышленных проектов в нефтехимии.',
+                        'content' => 'Монтируются как на улице, так и в помещениях. Резервуары диаметром от 700 мм до 3,6 м и длиной до 12 м адаптируются под любые задачи — от компактных АЗС до промышленных проектов в нефтехимии.',
                     ],
                 ])
             ],

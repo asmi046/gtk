@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header__title">
             <h1>{!! $cerecter['banner_h1']->value !!}</h1>
-            <button type="button" class="btn header__title-btn">Скачать каталог</button>
+            <a href="#consult" class="btn header__title-btn">Задать вопрос</a>
         </div>
     </div>
     <div class="container">

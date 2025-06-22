@@ -18,6 +18,6 @@
             </p>
         @endif
 
-        <a href="#" class="button">Скачать каталог</a>
+        <a href="#consult" class="button">Получить консультацию</a>
     </div>
 </div>

@@ -14,7 +14,11 @@
 
     <section>
         <div class="container">
-
+            <div class="vacancy-list">
+                @foreach ($vacancy as $item)
+                    <x-cards.vacancy :item="$item"></x-cards.vacancy>
+                @endforeach
+            </div>
         </div>
     </section>
 
