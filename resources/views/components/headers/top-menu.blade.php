@@ -14,7 +14,7 @@
         <x-logo.logo aClass="sticky-menu__logo"></x-logo.logo>
         <x-sticky-menu prefix="menu" :items="$menuItems"></x-sticky-menu>
         <dialog data-js-overlay-menu-dialog="" class="sticky-menu__dialog">
-            <x-sticky-menu prefix="sticky-menu" :items="$menuItems"></x-sticky-menu>
+            <x-side-menu prefix="sticky-menu" :items="$menuItems"></x-side-menu>
         </dialog>
         <x-burger.burger></x-burger.burger>
     </div>

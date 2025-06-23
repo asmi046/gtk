@@ -45,4 +45,8 @@
             <a class="btn" href="#consult">Оставить заявку</a>
         </div>
     </div>
+    <div class="footer__policy container">
+        <a href="/page/politika-v-oblasti-obrabotki-personalnyx-dannyx">Политика в области обработки персональных данных</a>
+        <a href="/page/soglasie-na-obrabotku-personalnyx-dannyx">Согласие на обработку персональных данных</a>
+    </div>
 </footer>

@@ -40,7 +40,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Фасады',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "https://ibex.ru",
             ],
 
             [
@@ -85,6 +85,13 @@ class MenuSeeder extends Seeder
 
             [
                 'menu_name' => 'Боковое меню',
+                'title' => 'Лаборатория',
+                'order' => 1,
+                'lnk' => "/page/laboratoriia-nerazrusaiushhego-kontrolia",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
                 'title' => 'Теплицы',
                 'order' => 1,
                 'lnk' => "#",
@@ -94,7 +101,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Боковое меню',
                 'title' => 'Фасады',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "https://ibex.ru",
             ],
 
             [
@@ -127,19 +134,19 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Меню в металоконструкции',
                 'title' => 'Общестроительные металлоконструкции',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/metal-structures/dlia-stroitelnyx-rabot",
             ],
             [
                 'menu_name' => 'Меню в металоконструкции',
                 'title' => 'Дорожные металлоконструкции',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/metal-structures/dlia-doroznoi-infrastruktury",
             ],
             [
                 'menu_name' => 'Меню в металоконструкции',
                 'title' => 'Металлические опопры ЛЭП',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/metal-structures/dlia-lep",
             ],
 
             [
@@ -160,25 +167,25 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Другая продукция',
                 'title' => 'Закладные изделия и изделия из арматуры',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/products/armokarkasy-i-zakladnye-izdeliia",
             ],
             [
                 'menu_name' => 'Другая продукция',
                 'title' => 'Изготовление нестандартных трубопроводов',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/products/inzenernye-truboprovody",
             ],
             [
                 'menu_name' => 'Другая продукция',
                 'title' => 'Изготовление емкостей',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/products/rezervuary-stalnye",
             ],
             [
                 'menu_name' => 'Другая продукция',
                 'title' => 'Блочно-модульные здания',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/products/blocno-modulnye-zdaniia",
             ],
             [
                 'menu_name' => 'Другая продукция',
@@ -190,7 +197,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Другая продукция',
                 'title' => 'Фасады',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "https://ibex.ru",
             ],
 
         ];

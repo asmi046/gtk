@@ -21,26 +21,37 @@ class PageSeeder extends Seeder
         $data = [
             [
                 'title' => "Политика в области обработки персональных данных",
+                'sub_title' => null,
                 'slug' => Str::slug("Политика в области обработки персональных данных"),
                 'description' => file_get_contents(public_path('page_text/policy.html')),
             ],
 
             [
                 'title' => "Согласие на обработку персональных данных",
+                'sub_title' => null,
                 'slug' => Str::slug("Согласие на обработку персональных данных"),
                 'description' => file_get_contents(public_path('page_text/accept.html')),
             ],
 
             [
                 'title' => "О файлах Cookie",
+                'sub_title' => null,
                 'slug' => Str::slug("О файлах Cookie"),
                 'description' => file_get_contents(public_path('page_text/accept.html')),
             ],
 
             [
                 'title' => 'О нас',
+                'sub_title' => null,
                 'slug' => Str::slug("О нас"),
                 'description' => file_get_contents(public_path('page_text/cookie.html')),
+            ],
+
+            [
+                'title' => 'Лаборатория неразрушающего контроля',
+                'sub_title' => 'Надёжная транспортировка жидкостей и газов — от проекта до запуска.Мы создаём стальные трубопроводные системы, рассчитанные на десятилетия безотказной работы в самых разных условиях.',
+                'slug' => Str::slug("Лаборатория неразрушающего контроля"),
+                'description' => file_get_contents(public_path('page_text/lab.html')),
             ],
         ];
 

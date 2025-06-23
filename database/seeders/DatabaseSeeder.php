@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
                 ProductsZakladnieSeeder::class,
 
                 MetalStructuresSeeder::class,
+                MetalStructuresLepSeeder::class,
+                MetalStructuresStroySeeder::class,
 
                 VacancySeeder::class,
 

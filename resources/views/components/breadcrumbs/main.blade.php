@@ -11,11 +11,11 @@
 
 
 
-            @if (Request::route()->named('search-tovar'))
+            @if (Request::route()->named('metal_structures_page'))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="{{$article}}" itemprop="item" href="{{route('search', ['search'=> $article])}}">
-                        <span itemprop="name">{{ $article }}</span>
+                    <a title="Вся металоконструкции" itemprop="item" href="{{route('metal_structures')}}">
+                        <span itemprop="name">Вся продукция</span>
                         <meta itemprop="position" content="1">
                     </a>
                 </span>
@@ -23,12 +23,33 @@
                 <span class="sep"> / </span>
 
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
-                    <span title="{{ $brand }}" itemprop="item">
-                        <span itemprop="name">{{ $brand }}</span>
+                    <span title="{{ $title }}" itemprop="item">
+                        <span itemprop="name">{{ $title }}</span>
                         <meta itemprop="position" content="2">
                     </span>
                 </span>
             @endif
+
+            @if (Request::route()->named('product_page'))
+                <span class="sep"> / </span>
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a title="Вся продукция" itemprop="item" href="{{route('products')}}">
+                        <span itemprop="name">Вся продукция</span>
+                        <meta itemprop="position" content="1">
+                    </a>
+                </span>
+
+                <span class="sep"> / </span>
+
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
+                    <span title="{{ $title }}" itemprop="item">
+                        <span itemprop="name">{{ $title }}</span>
+                        <meta itemprop="position" content="2">
+                    </span>
+                </span>
+            @endif
+
+
 
             @if (isset($title))
                 <span class="sep"> / </span>

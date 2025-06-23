@@ -15,7 +15,7 @@
             min-height: 350px;
             justify-content: end;
             .container {
-                z-index: 100;
+                z-index: 99;
                 color:white;
                 margin-bottom: 50px;
 
@@ -179,6 +179,12 @@
         transition-duration: 0.2s;
         transition-behavior: allow-discrete;
 
+        ul {
+            margin-top: 20px;
+            li{
+                margin-bottom: 10px;
+            }
+        }
         &[open] {
             display: flex;
             justify-content: flex-end;
@@ -254,4 +260,10 @@
             background-position: bottom right;
         }
     }
+}
+
+@media (width <= 480px) {
+.header__wrapper.__page .container h1 {
+    font-size: 32px;
+}
 }
