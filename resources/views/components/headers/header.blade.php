@@ -11,7 +11,6 @@
             <div class="header__video-overlay"></div>
         </div>
         <x-header-inner/>
-
     </div>
 
 </header>

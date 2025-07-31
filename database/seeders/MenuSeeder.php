@@ -15,33 +15,6 @@ class MenuSeeder extends Seeder
     public function run(): void
     {
         $data = [
-            [
-                'menu_name' => 'Главное меню',
-                'title' => 'Металоконструкции',
-                'order' => 1,
-                'lnk' => "/metal-structures",
-            ],
-
-            [
-                'menu_name' => 'Главное меню',
-                'title' => 'Продукция',
-                'order' => 1,
-                'lnk' => "/products",
-            ],
-
-            [
-                'menu_name' => 'Главное меню',
-                'title' => 'Теплицы',
-                'order' => 1,
-                'lnk' => "#",
-            ],
-
-            [
-                'menu_name' => 'Главное меню',
-                'title' => 'Фасады',
-                'order' => 1,
-                'lnk' => "https://ibex.ru",
-            ],
 
             [
                 'menu_name' => 'Главное меню',

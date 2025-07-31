@@ -21,6 +21,7 @@
 @use "product_list";
 @use "vacancies";
 @use "modal";
+@use "header_card";
 
 
 :root {
@@ -86,9 +87,6 @@ img {
     object-fit: cover;
 }
 
-.logo {
-    max-width: 424px;
-}
 
 .map_in_page {
     width:100%;

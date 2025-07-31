@@ -23,6 +23,10 @@
         <g id="cross"><line x1="7" x2="25" y1="7" y2="25"/><line x1="7" x2="25" y1="25" y2="7"/></g>
     </symbol>
 
+    <symbol id="header_lnk_icon" viewBox="0 0 8 14" fill="none">
+        <path d="M4.41995 0.690002H0.449951L4.02995 7.02L0.469951 13.3H4.44995L7.99995 7.02L4.41995 0.690002Z" fill="white"/>
+    </symbol>
+
     <symbol id="loader_icon" viewBox="0 0 100 100">
         <circle fill="none" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
         <line fill="none" stroke-linecap="round" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
