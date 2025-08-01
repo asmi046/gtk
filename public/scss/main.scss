@@ -22,6 +22,7 @@
 @use "vacancies";
 @use "modal";
 @use "header_card";
+@use "map";
 
 
 :root {
@@ -90,7 +91,7 @@ img {
 
 .map_in_page {
     width:100%;
-    min-height: 300px;
+    min-height: 400px;
     border-radius: $border_rad;
     overflow: hidden;
     border: 1px solid $gray_border_color;

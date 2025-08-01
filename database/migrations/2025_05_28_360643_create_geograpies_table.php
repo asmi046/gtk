@@ -16,6 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name')->comment('Имя точки');
             $table->string('geo')->comment('Координаты');
+            $table->string('type')->default('Металоконструкции')->comment('Тип точки');
             $table->text('description')->nullable()->comment('Описание');
         });
     }
