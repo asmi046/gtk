@@ -3,12 +3,12 @@
             <div class="col left">
 
                 <div class="header-cards">
-                    <a href="#" class="header-card">
+                    <a href="{{ route('metal_structures') }}" class="header-card">
                         <div class="header-card__top">
                             <h2>Металоконструкции</h2>
                         </div>
                         <div class="header-card__bottom">
-                            <p>Проектирование и изготовление металлических конструкций любой сложности для промышленных объектов.</p>
+                            <p>Проектирование и изготовление металлоконструкций любой сложности.</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>
@@ -55,7 +55,7 @@
             <div class="col center">
                 <div class="header__title">
                     <h1>{!! $cerecter['banner_h1']->value !!}</h1>
-                    <a href="#consult" class="btn header__title-btn">Задать вопрос</a>
+                    <a href="#metal_in_main" class="btn header__title-btn">Подробнее</a>
                 </div>
 
                 <div class="header__digits">

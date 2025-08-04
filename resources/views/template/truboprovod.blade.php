@@ -18,6 +18,8 @@
         </div>
     </section>
 
+    @isset($sections['Преимущества трубопроводов нашего изготовления'])
+
     <section>
         <div class="container">
             <h2 class="section-title clients__title">Преимущества трубопроводов нашего изготовления</h2>
@@ -30,6 +32,9 @@
             </div>
         </div>
     </section>
+
+    @endisset
+
 
     <section>
         <div class="container">

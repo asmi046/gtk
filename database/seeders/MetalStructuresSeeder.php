@@ -27,9 +27,9 @@ class MetalStructuresSeeder extends Seeder
 
         $data = [
             [
-                'title' => "Металлоконструкции для дорожной инфраструктуры и АСУДД",
-                'sub_title' => "Проектируем и производим рамные опоры, колонны и фермы с антикоррозийной защитой для любых климатических условий.",
-                'slug' => Str::slug("для дорожной инфраструктуры"),
+                'title' => "Металлоконструкции для транспортной инфраструктуры",
+                'sub_title' => "Осуществляем полный спектр работ по проектированию и изготовлению металлоконструкции для транспортной инфраструктуры",
+                'slug' => Str::slug("для транспортной инфраструктуры"),
                 'img' => 'mc/road_1.webp',
                 'description' => file_get_contents(public_path('tmp_data/mc/road.html')),
                 'template' => 'template.road_mc',
@@ -53,8 +53,6 @@ class MetalStructuresSeeder extends Seeder
                 ]),
 
                 'sections' => json_encode([
-
-
                     [
                         'part' => 'Почему выбирают нас',
                         'picture' => 'mc/galka.svg',

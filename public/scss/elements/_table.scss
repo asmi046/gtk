@@ -14,11 +14,18 @@ table {
     }
 
     th {
-        background-color: $old_main_color;
+        background-color: $sub_color;
         color: white;
+        font-weight: normal;
     }
 
     tr:nth-child(2n) td {
         background-color: #EBEBEB;
+    }
+}
+
+@media (max-width: 768px) {
+    .t_wrapper {
+        overflow-x: auto;
     }
 }

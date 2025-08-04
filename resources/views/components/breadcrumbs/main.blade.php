@@ -28,9 +28,7 @@
                         <meta itemprop="position" content="2">
                     </span>
                 </span>
-            @endif
-
-            @if (Request::route()->named('product_page'))
+            @elseif (Request::route()->named('product_page'))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <a title="Вся продукция" itemprop="item" href="{{route('products')}}">
@@ -47,11 +45,7 @@
                         <meta itemprop="position" content="2">
                     </span>
                 </span>
-            @endif
-
-
-
-            @if (isset($title))
+            @elseif (isset($title))
                 <span class="sep"> / </span>
                     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
                         <span title="{{ $title }}" itemprop="item">

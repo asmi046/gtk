@@ -18,18 +18,21 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <h2 class="section-title clients__title">Преимущества наших резервуаров</h2>
-            <div class="advantages-list">
+    @isset ($sections['Преимущества наших резервуаров'])
+        <section>
+            <div class="container">
+                <h2 class="section-title clients__title">Преимущества наших резервуаров</h2>
+                <div class="advantages-list">
 
-                @foreach ( $sections['Преимущества наших резервуаров'] as $item)
-                    <x-cards.text :item="$item"></x-cards.text>
-                @endforeach
+                    @foreach ( $sections['Преимущества наших резервуаров'] as $item)
+                        <x-cards.text :item="$item"></x-cards.text>
+                    @endforeach
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endisset
+
 
 
     @if ($data->images)

@@ -1,4 +1,4 @@
-<section class="stages">
+<section id="metal_in_main" class="stages">
     <div class="stages__bg">
         <div class="container">
             <h2 class="section-title section-title">Производство металоконструкций</h2>
