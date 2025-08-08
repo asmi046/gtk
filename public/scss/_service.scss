@@ -1,0 +1,206 @@
+@use "helpers/" as *;
+
+.services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .service-card {
+        display: flex;
+        border: 1px solid $gray_border_color;
+        overflow: hidden;
+        transition: $transition_duration;
+
+        .text_blk {
+            padding: 20px 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                margin: 0 0 10px;
+                color: $black_color;
+                font-family: $sub_fonts;
+                line-height: 1.2;
+            }
+
+            p {
+                margin: 0;
+                font-size: 16px;
+                color: $black_color;
+                line-height: 1.4;
+            }
+        }
+
+        .image_wrap {
+            width: 280px;
+            height: 200px;
+            flex-shrink: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: $transition_duration;
+            }
+        }
+    }
+}
+
+// Адаптация для больших экранов
+@media (width <= 1440px) {
+    .services-cards {
+        .service-card {
+            .text_blk {
+                padding: 18px 25px;
+
+                h3 {
+                    font-size: 19px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .image_wrap {
+                width: 260px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+// Адаптация для ноутбуков
+@media (width <= 1280px) {
+    .services-cards {
+        .service-card {
+            .text_blk {
+                padding: 16px 20px;
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .image_wrap {
+                width: 240px;
+                height: 160px;
+            }
+        }
+    }
+}
+
+// Адаптация для планшетов
+@media (width <= 1024px) {
+    .services-cards {
+        gap: 15px;
+
+        .service-card {
+            .text_blk {
+                padding: 15px 18px;
+
+                h3 {
+                    font-size: 17px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            .image_wrap {
+                width: 200px;
+                height: 140px;
+            }
+        }
+    }
+}
+
+// Адаптация для мобильных устройств
+@media (width <= 768px) {
+    .services-cards {
+        gap: 12px;
+
+        .service-card {
+            flex-direction: column;
+
+            .text_blk {
+                padding: 15px;
+                order: 2;
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 14px;
+                    text-align: left;
+                }
+            }
+
+            .image_wrap {
+                width: 100%;
+                height: 200px;
+                order: 1;
+            }
+        }
+    }
+}
+
+// Адаптация для маленьких мобильных устройств
+@media (width <= 480px) {
+    .services-cards {
+        gap: 10px;
+
+        .service-card {
+            .text_blk {
+                padding: 12px;
+
+                h3 {
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            .image_wrap {
+                height: 180px;
+            }
+        }
+    }
+}
+
+// Адаптация для очень маленьких экранов
+@media (width <= 360px) {
+    .services-cards {
+        .service-card {
+            .text_blk {
+                padding: 10px;
+
+                h3 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .image_wrap {
+                height: 160px;
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\VacancyController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ProductsController;
@@ -25,6 +26,8 @@ use App\Http\Controllers\MetalStructuresController;
 
     Route::get('/products', [ProductsController::class, "index"])->name('products');
     Route::get('/products/{slug}', [ProductsController::class, "page"])->name('product_page');
+
+    Route::get('/services', [ServiceController::class, "index"])->name('services');
 
     Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
     Route::get('/page/{slug}', [PageController::class, "index"])->name('page');

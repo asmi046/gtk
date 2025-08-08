@@ -55,6 +55,13 @@ class SeoDataSeeder extends Seeder
                 'page_title' => "",
             ],
 
+            [
+                'url' => "services",
+                'seo_title' => "Услуги нашей компании",
+                'seo_description' => "Полный перечень услуг, предоставляемых нашей компанией",
+                'page_title' => "",
+            ],
+
         ];
 
         DB::table("seo_data")->insert($data);

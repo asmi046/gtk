@@ -27,7 +27,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Услуги',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/services",
             ],
 
             [
@@ -95,7 +95,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Боковое меню',
                 'title' => 'Услуги',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/services",
             ],
 
             [
