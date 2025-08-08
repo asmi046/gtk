@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
                 MetalStructuresSeeder::class,
                 MetalStructuresLepSeeder::class,
                 MetalStructuresStroySeeder::class,
+                MetalStructuresNsObSeeder::class,
 
                 VacancySeeder::class,
 

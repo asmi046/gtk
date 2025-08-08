@@ -3,8 +3,9 @@
 .map-legend {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
     // margin-top: 30px;
     padding: 20px 0;
 
@@ -32,7 +33,6 @@
 // Адаптация для планшетов
 @media (max-width: 1024px) {
     .map-legend {
-        gap: 30px;
         margin-top: 25px;
         padding: 15px 0;
 
@@ -47,7 +47,6 @@
 @media (max-width: 768px) {
     .map-legend {
         flex-direction: column;
-        gap: 15px;
         margin-top: 20px;
         padding: 15px 10px;
 
@@ -66,7 +65,6 @@
 
 @media (max-width: 480px) {
     .map-legend {
-        gap: 12px;
         margin-top: 15px;
         padding: 10px;
 

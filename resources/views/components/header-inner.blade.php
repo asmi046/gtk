@@ -17,7 +17,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="header-card">
+                    <a href="/products/rezervuary-stalnye" class="header-card">
                         <div class="header-card__top">
                             <h2>Емкости</h2>
                         </div>
@@ -31,7 +31,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="header-card">
+                    <a href="/products/inzenernye-truboprovody" class="header-card">
                         <div class="header-card__top">
                             <h2>Трубопроводы</h2>
                         </div>
