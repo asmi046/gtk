@@ -75,15 +75,15 @@
             <div class="map-legend">
                 <div class="map-legend__item">
                     <img src="{{ asset('img/pin.svg') }}" alt="Металоконструкции" class="map-legend__icon">
-                    <span class="map-legend__text">Металоконструкции</span>
+                    <span class="map-legend__text">Металлоконструкции</span>
                 </div>
                 <div class="map-legend__item">
                     <img src="{{ asset('img/pin_blue.svg') }}" alt="АЭС" class="map-legend__icon">
-                    <span class="map-legend__text">АЭС</span>
+                    <span class="map-legend__text">Конструкции и оборудование для нужд строительства АЭС</span>
                 </div>
                 <div class="map-legend__item">
                     <img src="{{ asset('img/pin_green.svg') }}" alt="Теплицы" class="map-legend__icon">
-                    <span class="map-legend__text">Теплицы</span>
+                    <span class="map-legend__text">Теплицы и тепличное оборудование</span>
                 </div>
             </div>
 

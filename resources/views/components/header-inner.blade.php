@@ -75,7 +75,7 @@
 
             <div class="col right">
                 <div class="header-cards">
-                    <a href="#" class="header-card __brand">
+                    <a href="https://ibex.ru" class="header-card __brand">
                         <div class="header-card__bottom">
                             <div class="header-card__wrapper">
                                 <img src="{{ asset('img/brands/ibex.svg') }}" alt="Вентилируемые фасады ИБЕКС">

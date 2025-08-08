@@ -98,40 +98,40 @@ class ServiceSeeder extends Seeder
             [
                 'title' => 'Резка резьбы',
                 'slug' => 'threading',
-                'img' => 'services/7.jpg',
+                'img' => 'services/8.jpg',
                 'description' => '<p>Резка наружной резьбы на трубах.</p>
                 <p><strong>Диаметр:</strong> до 40 мм</p>'
             ],
             [
                 'title' => 'Сварочные работы',
                 'slug' => 'welding',
-                'img' => 'services/8.jpg',
+                'img' => 'services/9.jpg',
                 'description' => '<p>Все виды сварочных работ:</p>
                 <p><strong>Методы:</strong> МП, РД, РАД, КТС, АФДС, МАДП, АФ, КСО</p>'
             ],
             [
                 'title' => 'Гибка арматуры',
                 'slug' => 'rebar-bending',
-                'img' => 'services/9.jpg',
+                'img' => 'services/10.jpg',
                 'description' => '<p>Гибка арматуры на станке по чертежам заказчика.</p>
                 <p><strong>Диаметр:</strong> до 35 мм</p>'
             ],
             [
                 'title' => 'Дробеструйная очистка',
                 'slug' => 'blasting',
-                'img' => 'services/10.jpg',
+                'img' => 'services/11.jpg',
                 'description' => '<p>Дробеструйная очистка листового металла и проката для подготовки поверхности.</p>'
             ],
             [
                 'title' => 'Лакокрасочное покрытие',
                 'slug' => 'painting',
-                'img' => 'services/11.jpg',
+                'img' => 'services/12.jpg',
                 'description' => '<p>Нанесение лакокрасочного покрытия на металл воздушным и безвоздушным способом.</p>'
             ],
             [
                 'title' => 'Полимерное окрашивание',
                 'slug' => 'polymer-coating',
-                'img' => 'services/12.jpg',
+                'img' => 'services/13.jpg',
                 'description' => '<p>Полимерное окрашивание металла:</p>
                 <ul>
                     <li><strong>Габариты:</strong> 6000×750×2000 мм</li>
@@ -141,14 +141,14 @@ class ServiceSeeder extends Seeder
             [
                 'title' => 'Штамповочное производство',
                 'slug' => 'stamping',
-                'img' => 'services/13.jpg',
+                'img' => 'services/14.jpg',
                 'description' => '<p>Штамповочное производство на оснастке заказчика.</p>
                 <p><strong>Усилие прессов:</strong> от 25 до 100 тонн</p>'
             ],
             [
                 'title' => 'Рубка листового металла',
                 'slug' => 'shearing',
-                'img' => 'services/14.jpg',
+                'img' => 'services/15.jpg',
                 'description' => '<p>Рубка листового металла на гильотинных ножницах:</p>
                 <ul>
                     <li><strong>Толщина металла:</strong> до 6/3 мм</li>
