@@ -18,6 +18,13 @@ class MenuSeeder extends Seeder
 
             [
                 'menu_name' => 'Главное меню',
+                'title' => 'Невостребованная продукция',
+                'order' => 1,
+                'lnk' => "/page/nevostrebovannaia-produkciia",
+            ],
+
+            [
+                'menu_name' => 'Главное меню',
                 'title' => 'Услуги',
                 'order' => 1,
                 'lnk' => "#",
@@ -54,6 +61,13 @@ class MenuSeeder extends Seeder
                 'title' => 'Продукция',
                 'order' => 1,
                 'lnk' => "/products",
+            ],
+
+            [
+                'menu_name' => 'Боковое меню',
+                'title' => 'Невостребованная продукция',
+                'order' => 1,
+                'lnk' => "/page/nevostrebovannaia-produkciia",
             ],
 
             [

@@ -23,6 +23,11 @@
     <section class="page_section text_styles pt_0">
         <div class="container">
             {!! $page->description !!}
+
+            <div class="nv_prod">
+                <a href="{{asset('nv_price/prod.xlsx')}}">Прайс на невостребованную продукцию</a>
+                <a href="{{asset('nv_price/obor.xlsx')}}">Прайс на невостребованное оборудование</a>
+            </div>
         </div>
     </section>
 

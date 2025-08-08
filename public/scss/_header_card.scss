@@ -37,8 +37,17 @@
             color: $main_color;
             text-transform: uppercase;
             font-family: $sub_fonts;
-            font-size: 22px;
+            font-size: 24px;
             margin: 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        h2 {
+            flex:1
         }
     }
 
@@ -74,23 +83,36 @@
     }
 
     &.__brand {
-        padding: 20px 50px;
+        padding: 20px 30px;
 
         img {
-            height:100px;
-            width: auto;
-            margin-bottom: 20px;
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
         }
 
         h2 {
             line-height: 1;
-            margin-bottom: 20px;
-            font-size: 28px;
+            font-size: 22px;
             color:black;
         }
 
         .header-card__bottom {
             padding: 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        margin-bottom: 10px;
+
+        & > * {
+            margin: auto;
+        }
+        h2 {
+            flex:1
         }
     }
 
@@ -104,7 +126,7 @@
 
     .header-card{
         &.__brand {
-            padding: 10px 30px;
+            padding: 10px 20px;
 
             img {
                 height: 70px;

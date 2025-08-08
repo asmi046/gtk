@@ -22,6 +22,7 @@ class PageSeeder extends Seeder
             [
                 'title' => "Политика в области обработки персональных данных",
                 'sub_title' => null,
+                'template' => null,
                 'slug' => Str::slug("Политика в области обработки персональных данных"),
                 'description' => file_get_contents(public_path('page_text/policy.html')),
             ],
@@ -29,6 +30,7 @@ class PageSeeder extends Seeder
             [
                 'title' => "Согласие на обработку персональных данных",
                 'sub_title' => null,
+                'template' => null,
                 'slug' => Str::slug("Согласие на обработку персональных данных"),
                 'description' => file_get_contents(public_path('page_text/accept.html')),
             ],
@@ -36,6 +38,7 @@ class PageSeeder extends Seeder
             [
                 'title' => "О файлах Cookie",
                 'sub_title' => null,
+                'template' => null,
                 'slug' => Str::slug("О файлах Cookie"),
                 'description' => file_get_contents(public_path('page_text/accept.html')),
             ],
@@ -43,6 +46,7 @@ class PageSeeder extends Seeder
             [
                 'title' => 'О нас',
                 'sub_title' => null,
+                'template' => null,
                 'slug' => Str::slug("О нас"),
                 'description' => file_get_contents(public_path('page_text/cookie.html')),
             ],
@@ -50,8 +54,17 @@ class PageSeeder extends Seeder
             [
                 'title' => 'Лаборатория неразрушающего контроля',
                 'sub_title' => 'Надёжная транспортировка жидкостей и газов — от проекта до запуска.Мы создаём стальные трубопроводные системы, рассчитанные на десятилетия безотказной работы в самых разных условиях.',
+                'template' => null,
                 'slug' => Str::slug("Лаборатория неразрушающего контроля"),
                 'description' => file_get_contents(public_path('page_text/lab.html')),
+            ],
+
+            [
+                'title' => 'Невостребованная продукция',
+                'sub_title' => 'Реализация невостребованной продукции и оборудования',
+                'template' => 'template.nv_prod',
+                'slug' => Str::slug("Невостребованная продукция"),
+                'description' => file_get_contents(public_path('page_text/nev_prod.html')),
             ],
         ];
 

@@ -8,7 +8,7 @@
                             <h2>Металоконструкции</h2>
                         </div>
                         <div class="header-card__bottom">
-                            <p>Проектирование и изготовление металлоконструкций любой сложности.</p>
+                            <p>Изготовление и проектирование металлоконструкций любой сложности</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>
@@ -22,7 +22,7 @@
                             <h2>Емкости</h2>
                         </div>
                         <div class="header-card__bottom">
-                            <p>Изготовление резервуаров и емкостей различного назначения с соблюдением всех технических требований.</p>
+                            <p>Изготовление резервуаров и емкостей различного назначения</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>
@@ -36,7 +36,7 @@
                             <h2>Трубопроводы</h2>
                         </div>
                         <div class="header-card__bottom">
-                            <p>Монтаж и проектирование трубопроводных систем для различных отраслей промышленности.</p>
+                            <p>Изготовление и проектирование трубопроводов</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>
@@ -77,8 +77,11 @@
                 <div class="header-cards">
                     <a href="#" class="header-card __brand">
                         <div class="header-card__bottom">
-                            <img src="{{ asset('img/brands/ibex.svg') }}" alt="Вентилируемые фасады ИБЕКС">
-                            <h2>Вентилируемые фасады <br>ИБЕКС</h2>
+                            <div class="header-card__wrapper">
+                                <img src="{{ asset('img/brands/ibex.svg') }}" alt="Вентилируемые фасады ИБЕКС">
+                                <h2>Вентилируемые фасады <br>ИБЕКС</h2>
+                            </div>
+
                             <p>Проектирование и изготовление металлических конструкций любой сложности для промышленных объектов.</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
@@ -91,8 +94,10 @@
                     <a href="#" class="header-card __brand">
 
                         <div class="header-card__bottom">
-                            <img src="{{ asset('img/brands/ibex_green.svg') }}" alt="Вентилируемые фасады ИБЕКС GREEN">
-                            <h2>Теплицы и оборудование <br>ИБЕКС GREEN</h2>
+                            <div class="header-card__wrapper">
+                                <img src="{{ asset('img/brands/ibex_green.svg') }}" alt="Вентилируемые фасады ИБЕКС GREEN">
+                                <h2>Теплицы и оборудование <br>ИБЕКС GREEN</h2>
+                            </div>
                             <p>Проектирование и изготовление металлических конструкций любой сложности для промышленных объектов.</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">

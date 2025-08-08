@@ -39,7 +39,8 @@ html {
 }
 
 body{
-    @include fluid-text(18, 14);
+    // @include fluid-text(18, 14);
+    font-size: 14px;
     font-family: $main_fonts;
     display: flex;
     flex-direction: column;
@@ -260,6 +261,19 @@ a {
     pointer-events: auto;
 }
 
+
+.nv_prod {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a{
+        color:$sub_color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 
 @media (width <= 1244px) {
 
