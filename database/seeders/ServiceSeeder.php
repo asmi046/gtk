@@ -69,13 +69,13 @@ class ServiceSeeder extends Seeder
                 <p><strong>Диаметр:</strong> 60×3 мм</p>'
             ],
             [
-                'title' => 'Вальцовка листового материала ',
+                'title' => 'Вальцовка листового материала',
                 'slug' => 'sheet-rolling',
                 'img' => 'services/4.jpg',
-                'description' => '<p>Вальцовка листового материала :</p>
+                'description' => '<p>Вальцовка листового материала:</p>
                 <ul>
-                    <li><strong>Листовой материал:</strong> толщина 1,5-4,5 мм, ширина 1300 мм</li>
-                    <li><strong>Металл:</strong> толщина 6-28 мм, ширина до 2500 мм</li>
+                    <li>толщина 1,5-4,5 мм, ширина 1300 мм</li>
+                    <li>толщина 6-28 мм, ширина до 2500 мм</li>
                 </ul>'
             ],
             [
@@ -99,8 +99,7 @@ class ServiceSeeder extends Seeder
                 'title' => 'Резка резьбы',
                 'slug' => 'threading',
                 'img' => 'services/8.jpg',
-                'description' => '<p>Резка наружной резьбы на трубах.</p>
-                <p><strong>Диаметр:</strong> до 40 мм</p>'
+                'description' => '<p>Резка наружной резьбы <strong>Диаметр:</strong> до 40 мм</p>'
             ],
             [
                 'title' => 'Сварочные работы',
@@ -151,7 +150,7 @@ class ServiceSeeder extends Seeder
                 'img' => 'services/15.jpg',
                 'description' => '<p>Рубка листового металла на гильотинных ножницах:</p>
                 <ul>
-                    <li><strong>Толщина металла:</strong> до 6/3 мм</li>
+                    <li><strong>Толщина металла черных и нержавеющих сталей:</strong> до 6/3 мм</li>
                     <li><strong>Длина реза:</strong> 3000 мм</li>
                 </ul>'
             ],

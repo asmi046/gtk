@@ -25,7 +25,7 @@ class MetalStructuresNsObSeeder extends Seeder
         $data = [
             [
                 'title' => "Нестандартное технологическое оборудование",
-                'sub_title' => "Наши производственные мощьности оснащены нестандартным технологическим оборудованием",
+                'sub_title' => "Изготавливаем нестандартное технологическое оборудование по чертежам заказчика",
                 'slug' => Str::slug("Нестандартное технологическое оборудование"),
                 'img' => 'mc/1_tup_pech.webp',
                 'description' => file_get_contents(public_path('tmp_data/ns_to/nsto.html')),
