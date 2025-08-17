@@ -17,6 +17,20 @@
                         </div>
                     </a>
 
+                    <a href="/products/armokarkasy-i-zakladnye-izdeliia" class="header-card">
+                        <div class="header-card__top">
+                            <h2>Армокаркасы</h2>
+                        </div>
+                        <div class="header-card__bottom">
+                            <p>Изготовление арматурных каркасов и закладных изделий</p>
+                            <div class="header-card__icon">
+                                <svg class="sprite_icon">
+                                    <use xlink:href="#header_lnk_icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
                     <a href="/products/rezervuary-stalnye" class="header-card">
                         <div class="header-card__top">
                             <h2>Емкости</h2>
@@ -82,7 +96,7 @@
                                 <h2>Вентилируемые фасады <br>ИБЕКС</h2>
                             </div>
 
-                            <p>Проектирование и изготовление металлических конструкций любой сложности для промышленных объектов.</p>
+                            <p>Система вентилируемых фасадов производства АО "Главтехконструкция"</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>
@@ -98,7 +112,7 @@
                                 <img src="{{ asset('img/brands/ibex_green.svg') }}" alt="Вентилируемые фасады ИБЕКС GREEN">
                                 <h2>Теплицы и оборудование <br>ИБЕКС GREEN</h2>
                             </div>
-                            <p>Проектирование и изготовление металлических конструкций любой сложности для промышленных объектов.</p>
+                            <p>Теплицы и тепличное оборудование производства АО "Главтехконструкция"</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>

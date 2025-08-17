@@ -1,7 +1,7 @@
 <section class="advantages advantages__inner">
     <div class="advantages__inner--bg">
         <div class="container">
-            <h2 class="advantages__title">Главтехконструкция предлагает изготовление и производство металлоконструкций
+            <h2 class="advantages__title">Главтехконструкция - изготовление металлоконструкций
             </h2>
         </div>
     </div>

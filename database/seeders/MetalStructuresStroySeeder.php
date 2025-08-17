@@ -26,6 +26,7 @@ class MetalStructuresStroySeeder extends Seeder
         $data = [
             [
                 'title' => "Строительные металлические конструкции",
+                'order' => 1,
                 'sub_title' => "Мы реализуем проекты по выпуску несущих металлоконструкций для зданий и сооружений любой сложности",
                 'slug' => Str::slug("для строительных работ"),
                 'img' => 'mc/os_1.webp',

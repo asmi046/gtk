@@ -23,6 +23,7 @@ class MetalStructuresLepSeeder extends Seeder
         $data = [
             [
                 'title' => "Конструкции линий электропередач",
+                'order' => 2,
                 'sub_title' => "Производим стальные конструкции и комплектующие для ЛЭП с учетом всех технических требований",
                 'slug' => Str::slug("линий электропередач"),
                 'img' => 'mc/lep_1.webp',

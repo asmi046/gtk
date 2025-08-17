@@ -38,7 +38,7 @@ class ParametrSeeder extends Seeder
                 'str_id' => 'banner_value_2',
                 'section' => "Цифры на баннере",
                 'title' => "Тонн изготовление <br>металлоконструкций в год",
-                'value' => "<span>до </span>7000",
+                'value' => "<span>до </span>7 000",
                 'img' => null,
             ],
 

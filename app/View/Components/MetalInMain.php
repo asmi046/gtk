@@ -17,7 +17,7 @@ class MetalInMain extends Component
     public function __construct()
     {
         $this->metalconstructs = Cache::rememberForever('metal_in_main', function () {
-            return MetalStructures::all();
+            return MetalStructures::select()->orderBy('order', 'ASC')->get();
         });
     }
 

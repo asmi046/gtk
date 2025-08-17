@@ -8,6 +8,7 @@ class MetalStructures extends Model
 {
     protected $fillable = [
         'title',
+        'order',
         'sub_title',
         'slug',
         'template',
