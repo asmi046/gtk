@@ -31,7 +31,7 @@
                     <h2>Контакты</h2>
                     <p class="param"><span class="label">тел.:</span> <a class="phone" href="tel:+7{{ phone_format( $contacts['phone']->value ) }}">{{ $contacts['phone']->value }}</a></p>
                     <p class="param"><span class="label">e-mail:</span> <a class="email" href="mailto:{{ $contacts['email']->value }}">{{ $contacts['email']->value }}</a></p>
-                    <h2>Главный офис</h2>
+                    <h2>Офис</h2>
                     <p class="param"><span class="label">Адрес:</span> {{ $contacts['adress']->value }}</p>
                     <p class="param"><span class="label">Режим работы:</span> {{ $contacts['work_time']->value }}</p>
                 </div>

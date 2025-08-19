@@ -3,7 +3,7 @@
 @section('main')
     <x-headers.header-page
         :title="$data->title"
-        :subtitle="$data->sub_title"
+        subtitle=""
     />
 
     <section class="breadcrumbs_section">
@@ -38,7 +38,7 @@
                 <div class="gallery-grid">
 
                     @foreach ($data->images as $item)
-                        <x-cards.galery :item="$item"></x-cards.galery>
+                        <x-cards.galery  :showtitle="false" :item="$item"></x-cards.galery>
                     @endforeach
 
                 </div>

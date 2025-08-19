@@ -55,7 +55,7 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'email',
                     'title' => 'E-mail',
-                    'value' => 'kursk@glavtk.ru',
+                    'value' => 'info@glavtk.ru',
                 ],
 
                 [

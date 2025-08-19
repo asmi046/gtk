@@ -119,7 +119,7 @@ class MenuSeeder extends Seeder
         $footer_menu = [
             [
                 'menu_name' => 'Меню в металоконструкции',
-                'title' => 'Общестроительные металлоконструкции',
+                'title' => 'Строительные металлоконструкции',
                 'order' => 1,
                 'lnk' => "/metal-structures/dlia-stroitelnyx-rabot",
             ],

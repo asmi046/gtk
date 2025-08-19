@@ -41,7 +41,7 @@
         </div>
         <div class="footer__contacts contacts">
             <a class="call_phone" href="tel:+74712735400">+7 (4712) 73 54 00</a>
-            <a class="sand_email" href="mailto:kursk@glavtk.ru">kursk@glavtk.ru</a>
+            <a class="sand_email" href="mailto:info@glavtk.ru">info@glavtk.ru</a>
             <a class="btn" href="#consult">Оставить заявку</a>
         </div>
     </div>

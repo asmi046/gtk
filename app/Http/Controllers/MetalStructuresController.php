@@ -8,7 +8,7 @@ use App\Models\MetalStructures;
 class MetalStructuresController extends Controller
 {
     public function index() {
-        $data = MetalStructures::all();
+        $data = MetalStructures::select()->orderBy('order', 'ASC')->get();
         return view('metal', ['products' => $data]);
     }
 
