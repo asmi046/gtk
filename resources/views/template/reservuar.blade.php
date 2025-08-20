@@ -3,7 +3,6 @@
 @section('main')
     <x-headers.header-page
         :title="$data->title"
-        :subtitle="$data->sub_title"
     />
 
     <section class="breadcrumbs_section">

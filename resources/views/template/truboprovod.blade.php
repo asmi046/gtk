@@ -53,7 +53,7 @@
             <div class="gallery-grid">
 
                 @foreach ($data->images as $item)
-                    <x-cards.galery :item="$item"></x-cards.galery>
+                    <x-cards.galery :item="$item" :showtitle="false"></x-cards.galery>
                 @endforeach
 
             </div>
