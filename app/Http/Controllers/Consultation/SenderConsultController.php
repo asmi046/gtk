@@ -34,6 +34,14 @@ class SenderConsultController extends Controller
         return redirect()->route('mail.consultation.thencs');
     }
 
+    public function send_hh_form(ConsultFormRequest $request, TelegramSendAction $tgsender) {
+        $data = $request->validated();
+        $tmp = $tgsender->handle("<b>Консультация</b>\n\rТелефон: ".$data['phone']);
+        Mail::to(explode(",",config('consultation.mailadresat_hh')))->send(new ConsultMail($data));
+
+        return redirect()->route('mail.consultation.thencs');
+    }
+
     public function show_thencs() {
         return view('mail.consultation.thencs');
     }
