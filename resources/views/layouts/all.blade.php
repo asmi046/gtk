@@ -31,7 +31,7 @@
     @include("allicon")
 
     <div class="modal_win" id="modal_app">
-        <modal-window rout="/send_consult" redirect="/thencs" hesh="consult" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в течении 15 минут"></modal-window>
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="consult" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
         <cookies-warning
             privacy-policy-link="{{ route('page', 'politika-v-oblasti-obrabotki-personalnyx-dannyx') }}"
             cookies-info-link="{{ route('page', 'o-failax-sookie') }}"

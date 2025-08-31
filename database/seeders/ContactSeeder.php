@@ -49,7 +49,7 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'work_time',
                     'title' => 'Время работы',
-                    'value' => 'Пн-Пт 09:00 - 18:00 Сб-Вс 10:00 - 15:00',
+                    'value' => 'Пн-Пт 08:30 - 17:00, Сб-Вс - Выходные',
                 ],
 
                 [

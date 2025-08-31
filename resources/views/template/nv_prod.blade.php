@@ -25,8 +25,8 @@
             {!! $page->description !!}
 
             <div class="nv_prod">
-                <a href="{{asset('nv_price/prod.xlsx')}}">Прайс на невостребованную продукцию</a>
-                <a href="{{asset('nv_price/obor.xlsx')}}">Прайс на невостребованное оборудование</a>
+                <a href="{{asset('nv_price/prod.xlsx')}}">Прайс на невостребованное сырьё и деловой отход</a>
+                <a href="{{asset('nv_price/obor.xlsx')}}">Перечень реализуемого оборудования</a>
             </div>
         </div>
     </section>

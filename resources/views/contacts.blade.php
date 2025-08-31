@@ -22,7 +22,7 @@
                     <p class="label">ИНН:</p>
                     <p class="param">{{ $contacts['inn']->value }}</p>
 
-                    <p class="label">ОГРНИП:</p>
+                    <p class="label">ОГРН:</p>
                     <p class="param">{{ $contacts['ogrn']->value }}</p>
 
                 </div>
