@@ -34,6 +34,18 @@
                     <h2>Офис</h2>
                     <p class="param"><span class="label">Адрес:</span> {{ $contacts['adress']->value }}</p>
                     <p class="param"><span class="label">Режим работы:</span> {{ $contacts['work_time']->value }}</p>
+                    <div class="social">
+                        <a href="{{ $contacts['tg_lnk']->value }}">
+                            <svg class="sprite_icon">
+                                <use xlink:href="#tg_icon"></use>
+                            </svg>
+                        </a>
+                        <a href="{{ $contacts['ws_lnk']->value }}">
+                            <svg class="sprite_icon">
+                                <use xlink:href="#ws_icon"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 

@@ -22,5 +22,7 @@
         </div>
     </section>
 
+    <x-join-team-section></x-join-team-section>
+
 
 @endsection

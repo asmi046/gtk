@@ -12,12 +12,12 @@ use App\Http\Controllers\MetalStructuresController;
 
     Route::controller(IndexController::class)->group(function(){
         Route::get('/','index')->name('home');
-        Route::get('/company','company')->name('company');
-        Route::get('/products','products')->name('products');
-        Route::get('/services','services')->name('services');
-        Route::get('/news', 'news')->name('news');
-        Route::get('/vacancies','vacancies')->name('vacancies');
-        Route::get('/lab','lab')->name('lab');
+        // Route::get('/company','company')->name('company');
+        // Route::get('/products','products')->name('products');
+        // Route::get('/services','services')->name('services');
+        // Route::get('/news', 'news')->name('news');
+        // Route::get('/vacancies','vacancies')->name('vacancies');
+        // Route::get('/lab','lab')->name('lab');
 
     });
 

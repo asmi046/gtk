@@ -26,6 +26,7 @@
 @use "service";
 
 
+
 :root {
     --container-width: #{fluid-to-laptop($container_desktop_width, $container_laptop_width)};
     --header-container-width: #{fluid-to-laptop($container_header, $container_laptop_width)};
@@ -273,6 +274,16 @@ a {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    .sprite_icon {
+        width: 30px;
+        height: 30px;
     }
 }
 
