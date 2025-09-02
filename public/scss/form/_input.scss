@@ -58,10 +58,14 @@ textarea{
         accent-color: $main_color;
     }
 
-    span a {
-        color:$sub_color;
-        &:hover {
-            text-decoration: underline;
+    span{
+        text-align: left;
+            a {
+            color:$sub_color;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

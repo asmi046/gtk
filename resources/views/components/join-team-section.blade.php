@@ -14,13 +14,7 @@
                 <label class="join__team-label">
                     <input type="tel" name="join_phone" placeholder="Телефон" class="join__team-input">
                 </label>
-                <label class="join__team-label--custom">
-                    <input type="checkbox" class="visually-hidden" id="join-checkbox">
-                    <span class="join__team-checkbox--custom"></span>
-                    <span class="join__team-checkbox--conditions no-select">
-                        Даю согласие на обработку персональных данных согласно политике конфиденциальности
-                    </span>
-                </label>
+                <x-consultation-form.policy></x-consultation-form.policy>
                 <button type="submit" class="join__team-button btn">Отправить</button>
             </form>
         </div>

@@ -14,5 +14,6 @@
         <textarea name="details" cols="10" rows="5" class="advantages__form-input"
             placeholder="Информация о заказе"></textarea>
     </label>
+    <x-consultation-form.policy></x-consultation-form.policy>
     <button type="submit" class="advantages__form-button btn">Отправить</button>
 </form>
