@@ -1,6 +1,7 @@
 import './bootstrap';
 import './burger';
 import './swiper';
+import './mask';
 
 import fslightbox from 'fslightbox'
 
@@ -25,3 +26,4 @@ import { VMaskDirective } from 'v-slim-mask'
 modal_app.use(VueAxios, axios)
 modal_app.directive('mask', VMaskDirective)
 modal_app.mount("#modal_app");
+

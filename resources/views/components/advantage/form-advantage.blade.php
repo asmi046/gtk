@@ -5,7 +5,7 @@
         <input type="text" name="name" placeholder="Ваше ФИО" class="advantages__form-input">
     </label>
     <label class="advantages__form-label">
-        <input type="tel" name="phone" placeholder="Телефон" class="advantages__form-input" required>
+        <input type="tel" name="phone" placeholder="Телефон" class="advantages__form-input phone-mask" required>
     </label>
     <label class="advantages__form-label">
         <input type="email" name="email" placeholder="E-mail" class="advantages__form-input">

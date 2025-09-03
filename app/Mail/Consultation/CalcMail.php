@@ -11,7 +11,7 @@ use Illuminate\Queue\SerializesModels;
 
 use Illuminate\Mail\Mailables\Address;
 
-class HhMail extends Mailable
+class CalcMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -37,7 +37,7 @@ class HhMail extends Mailable
     {
         return new Envelope(
             from: new Address("ibex-kursk@yandex.ru", "ГлавТехКонструкция"),
-            subject: 'Карьера - заявка',
+            subject: 'Заявка на расчет',
         );
     }
 
@@ -49,7 +49,7 @@ class HhMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'mail.consultation.hh',
+            view: 'mail.consultation.calc',
         );
     }
 

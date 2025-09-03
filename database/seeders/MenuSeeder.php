@@ -22,12 +22,7 @@ class MenuSeeder extends Seeder
                 'order' => 1,
                 'lnk' => route('home'),
             ],
-            [
-                'menu_name' => 'Главное меню',
-                'title' => 'Невостребованное сырье',
-                'order' => 1,
-                'lnk' => "/page/nevostrebovannaia-produkciia",
-            ],
+
 
             [
                 'menu_name' => 'Главное меню',
@@ -41,6 +36,13 @@ class MenuSeeder extends Seeder
                 'title' => 'Вакансии',
                 'order' => 1,
                 'lnk' => "/vacancies",
+            ],
+
+            [
+                'menu_name' => 'Главное меню',
+                'title' => 'Невостребованное сырье',
+                'order' => 1,
+                'lnk' => "/page/nevostrebovannaia-produkciia",
             ],
 
             [
@@ -67,13 +69,6 @@ class MenuSeeder extends Seeder
                 'title' => 'Продукция',
                 'order' => 1,
                 'lnk' => "/products",
-            ],
-
-            [
-                'menu_name' => 'Боковое меню',
-                'title' => 'Невостребованное сырье',
-                'order' => 1,
-                'lnk' => "/page/nevostrebovannaia-produkciia",
             ],
 
             [

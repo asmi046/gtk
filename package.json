@@ -40,6 +40,7 @@
         "vite": "^6.2.4"
     },
     "dependencies": {
+        "@maskito/core": "^3.10.3",
         "@vitejs/plugin-vue": "^5.2.3",
         "fslightbox": "^3.6.1",
         "swiper": "^11.2.6",
