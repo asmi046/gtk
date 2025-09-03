@@ -357,6 +357,15 @@
 
 @media (width <= 480px) {
     .header  {
+        &__wrapper {
+            &.__page {
+                .container h1 {
+                    font-size: 38px;
+                    line-height: 1.1;
+                }
+            }
+        }
+
         &__title {
             h1 {
                 font-size: 32px;

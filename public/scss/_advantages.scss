@@ -32,8 +32,7 @@
 
     &__form {
         width: 100%;
-        max-height: 600px;
-        justify-content: center;
+        justify-content: start;
         top: fluid(-79, -43);
         position: relative;
         display: flex;
@@ -127,7 +126,7 @@
         }
 
         &__list {
-            padding-block: 50px;
+            padding-block: 30px;
             justify-content: center;
         }
     }
