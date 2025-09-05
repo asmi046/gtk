@@ -60,11 +60,19 @@ class PageSeeder extends Seeder
             ],
 
             [
-                'title' => 'Невостребованная продукция',
-                'sub_title' => 'Реализация невостребованной продукции и оборудования',
+                'title' => 'Невостребованное сырье и деловой отход',
+                'sub_title' => 'Реализация невостребованного сырья и делового отхода',
                 'template' => 'template.nv_prod',
                 'slug' => Str::slug("Невостребованная продукция"),
                 'description' => file_get_contents(public_path('page_text/nev_prod.html')),
+            ],
+
+            [
+                'title' => 'Сайт ИБЕКС Green в разработке',
+                'sub_title' => '',
+                'template' => null,
+                'slug' => Str::slug("ИБЕКС Green"),
+                'description' => "Сайт ИБЕКС Green в разработке ИБЕКС Green находится в разработке.",
             ],
         ];
 

@@ -5,7 +5,7 @@
                 <div class="header-cards">
                     <a href="{{ route('metal_structures') }}" class="header-card">
                         <div class="header-card__top">
-                            <h2>Металоконструкции</h2>
+                            <h2>Металлоконструкции</h2>
                         </div>
                         <div class="header-card__bottom">
                             <p>Изготовление и проектирование металлоконструкций любой сложности</p>
@@ -96,7 +96,7 @@
                                 <h2>Вентилируемые фасады <br>ИБЕКС</h2>
                             </div>
 
-                            <p>Система вентилируемых фасадов производства АО "Главтехконструкция"</p>
+                            <p>Система вентилируемых фасадов производства <br>АО "Главтехконструкция"</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>
@@ -105,14 +105,14 @@
                         </div>
                     </a>
 
-                    <a href="#" class="header-card __brand">
+                    <a href="/page/ibeks-green" class="header-card __brand">
 
                         <div class="header-card__bottom">
                             <div class="header-card__wrapper">
                                 <img src="{{ asset('img/brands/ibex_green.svg') }}" alt="Вентилируемые фасады ИБЕКС GREEN">
                                 <h2>Теплицы и оборудование <br>ИБЕКС GREEN</h2>
                             </div>
-                            <p>Теплицы и тепличное оборудование производства АО "Главтехконструкция"</p>
+                            <p>Теплицы и тепличное оборудование производства <br>АО "Главтехконструкция"</p>
                             <div class="header-card__icon">
                                 <svg class="sprite_icon">
                                     <use xlink:href="#header_lnk_icon"></use>

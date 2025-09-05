@@ -3,7 +3,7 @@
     <div v-if="showBanner" class="cookie-banner">
       <div class="cookie-content">
         <h3>На сайте используются файлы cookie</h3>
-        <p>Оставаясь на сайте, вы выражаете свое <a :href="privacyPolicyAcceptLink" target="_blank">согласие</a> на обработку персональных данных в соответствии c <a :href="privacyPolicyLink" target="_blank">плитика конфиденциальности</a> </p>
+        <p>Оставаясь на сайте, вы выражаете свое <a :href="privacyPolicyAcceptLink" target="_blank">согласие</a> на обработку персональных данных в соответствии c <a :href="privacyPolicyLink" target="_blank">политика конфиденциальности</a> </p>
         <p>Подробнее о файлах <a :href="cookiesInfoLink" target="_blank">cookies</a></p>
         <button @click="acceptCookies" class="accept-button">Принять</button>
       </div>

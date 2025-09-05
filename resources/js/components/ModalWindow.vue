@@ -11,6 +11,7 @@
             <p class="sub_h">{{subtitle}}</p>
             <form v-show="!showAccept" class="sending_form" action="/send_consult" method="POST">
                 <input type="hidden" name="_token" :value="_token">
+                <input type="text" name="name" v-model="name" placeholder="Имя">
                 <input type="text" v-mask="{mask: '+N (NNN) NNN-NN-NN', model: 'cpf' }" name="phone" v-model="phone" placeholder="Телефон*">
                 <div class="error_list_wrap">
                     <div v-for="(item, index) in errorList" :key="index" class="error">{{item}}</div>
@@ -58,6 +59,7 @@ const policy_ch = ref(false)
 const accept_ch = ref(false)
 
 const phone = ref("");
+const name = ref("");
 const showModal = ref(false);
 const showLoader = ref(false);
 const showAccept = ref(false);
@@ -97,6 +99,7 @@ const sendMsg = () => {
     axios.post(props.rout, {
         _token: _token.value,
         phone: phone.value,
+        name: name.value,
     })
     .then((response) => {
         showLoader.value = false;

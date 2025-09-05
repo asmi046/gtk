@@ -31,13 +31,13 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'tg_lnk',
                     'title' => 'Ссылка  на Телеграм',
-                    'value' => 'tg://resolve?domain=IBEX_IBEX',
+                    'value' => 'tg://resolve?domain=glavtk',
                 ],
 
                 [
                     'name' => 'ws_lnk',
                     'title' => 'Ссылка  на WhatsApp',
-                    'value' => 'https://wa.me/79019969575',
+                    'value' => 'https://wa.me/79081234838',
                 ],
 
                 [

@@ -41,6 +41,7 @@ class ServiceSeeder extends Seeder
                 <ul>
                     <li><strong>Лазерная резка</strong> - габариты заготовки 2 000×6 000×8 мм</li>
                     <li><strong>Плазменная резка</strong> - габариты заготовки 2 000×6 000×35 мм</li>
+                    <li><strong>Кислородная резка</strong> - габариты заготовки 2 000×3 000×30 - 50 мм</li>
                 </ul>'
             ],
             [
@@ -74,8 +75,8 @@ class ServiceSeeder extends Seeder
                 'img' => 'services/4.jpg',
                 'description' => '<p>Вальцовка листового материала:</p>
                 <ul>
-                    <li>толщина 1,5-4,5 мм, ширина 1300 мм</li>
-                    <li>толщина 6-28 мм, ширина до 2500 мм</li>
+                    <li>Толщина 1,5-4,5 мм, ширина 1300 мм</li>
+                    <li>Толщина 6-28 мм, ширина до 2500 мм</li>
                 </ul>'
             ],
             [
@@ -99,7 +100,7 @@ class ServiceSeeder extends Seeder
                 'title' => 'Резка резьбы',
                 'slug' => 'threading',
                 'img' => 'services/8.jpg',
-                'description' => '<p>Резка наружной резьбы <strong>Диаметр:</strong> до 40 мм</p>'
+                'description' => '<p>Резка наружной резьбы</p> <p><strong>Диаметр:</strong> до 40 мм</p>'
             ],
             [
                 'title' => 'Сварочные работы',

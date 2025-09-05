@@ -34,6 +34,7 @@ class ConsultFormRequest extends FormRequest
     public function rules(): array
     {
         return [
+            "name" => [],
             "phone" => ['required','string'],
         ];
     }

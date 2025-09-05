@@ -39,10 +39,10 @@ class ProductsSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/product/truba/main.html')),
                 'template' => 'template.truboprovod',
                 'images' => json_encode([
-                    [
-                        'title' => "Труба",
-                        'img' => "products/truba_1.webp",
-                    ],
+                    // [
+                    //     'title' => "Труба",
+                    //     'img' => "products/truba_1.webp",
+                    // ],
                     [
                         'title' => "КуАЭС2 Сварка магистрального трубопровода",
                         'img' => "products/truba_2.webp",

@@ -24,7 +24,7 @@
         <div class="footer__navigation">
 
             <nav class="footer__menu">
-                <h3>Металоконструкции</h3>
+                <h3>Металлоконструкции</h3>
                 <ul class="footer__menu-list">
                     <x-menues.puncts name="Меню в металоконструкции" />
                 </ul>

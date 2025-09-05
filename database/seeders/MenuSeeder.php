@@ -59,7 +59,7 @@ class MenuSeeder extends Seeder
         $data = [
             [
                 'menu_name' => 'Боковое меню',
-                'title' => 'Металоконструкции',
+                'title' => 'Металлоконструкции',
                 'order' => 1,
                 'lnk' => "/metal-structures",
             ],
@@ -80,14 +80,14 @@ class MenuSeeder extends Seeder
 
             [
                 'menu_name' => 'Боковое меню',
-                'title' => 'Теплицы',
+                'title' => 'Теплицы и тепличное оборудование',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/page/ibeks-green",
             ],
 
             [
                 'menu_name' => 'Боковое меню',
-                'title' => 'Фасады',
+                'title' => 'НФС Ибекс',
                 'order' => 1,
                 'lnk' => "https://ibex.ru",
             ],
@@ -139,7 +139,7 @@ class MenuSeeder extends Seeder
             ],
             [
                 'menu_name' => 'Меню в металоконструкции',
-                'title' => 'Металлические опопры ЛЭП',
+                'title' => 'Металлические опоры ЛЭП',
                 'order' => 1,
                 'lnk' => "/metal-structures/dlia-lep",
             ],
@@ -184,13 +184,13 @@ class MenuSeeder extends Seeder
             ],
             [
                 'menu_name' => 'Другая продукция',
-                'title' => 'Теплицы',
+                'title' => 'Теплицы и тепличное оборудование',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/page/ibeks-green",
             ],
             [
                 'menu_name' => 'Другая продукция',
-                'title' => 'Фасады',
+                'title' => 'НФС Ибекс',
                 'order' => 1,
                 'lnk' => "https://ibex.ru",
             ],

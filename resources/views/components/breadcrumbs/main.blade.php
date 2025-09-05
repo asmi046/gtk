@@ -14,7 +14,7 @@
             @if (Request::route()->named('metal_structures_page'))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="Вся металоконструкции" itemprop="item" href="{{route('metal_structures')}}">
+                    <a title="Вся металлоконструкции" itemprop="item" href="{{route('metal_structures')}}">
                         <span itemprop="name">Вся продукция</span>
                         <meta itemprop="position" content="1">
                     </a>

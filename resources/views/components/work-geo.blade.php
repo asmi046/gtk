@@ -11,7 +11,7 @@
                 // Координаты центра карты
                 center: centerMap,
                 // Масштаб карты
-                zoom: 6,
+                zoom: 2,
                 // Выключаем все управление картой
                 controls: ['geolocationControl','zoomControl']
             });
@@ -74,7 +74,7 @@
 
             <div class="map-legend">
                 <div class="map-legend__item">
-                    <img src="{{ asset('img/pin.svg') }}" alt="Металоконструкции" class="map-legend__icon">
+                    <img src="{{ asset('img/pin.svg') }}" alt="Металлоконструкции" class="map-legend__icon">
                     <span class="map-legend__text">Металлоконструкции</span>
                 </div>
                 <div class="map-legend__item">
