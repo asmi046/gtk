@@ -72,7 +72,7 @@ class PageSeeder extends Seeder
                 'sub_title' => '',
                 'template' => null,
                 'slug' => Str::slug("ИБЕКС Green"),
-                'description' => "Сайт ИБЕКС Green в разработке ИБЕКС Green находится в разработке.",
+                'description' => "",
             ],
         ];
 
