@@ -135,20 +135,20 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Меню в металоконструкции',
                 'title' => 'Дорожные металлоконструкции',
                 'order' => 1,
-                'lnk' => "/metal-structures/dlia-doroznoi-infrastruktury",
+                'lnk' => "/metal-structures/dlia-transportnoi-infrastruktury",
             ],
             [
                 'menu_name' => 'Меню в металоконструкции',
                 'title' => 'Металлические опоры ЛЭП',
                 'order' => 1,
-                'lnk' => "/metal-structures/dlia-lep",
+                'lnk' => "/metal-structures/linii-elektroperedac",
             ],
 
             [
                 'menu_name' => 'Меню в металоконструкции',
                 'title' => 'Нестандартное оборудование',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/metal-structures/nestandartnoe-texnologiceskoe-oborudovanie",
             ],
 
         ];
@@ -175,12 +175,6 @@ class MenuSeeder extends Seeder
                 'title' => 'Изготовление емкостей',
                 'order' => 1,
                 'lnk' => "/products/rezervuary-stalnye",
-            ],
-            [
-                'menu_name' => 'Другая продукция',
-                'title' => 'Блочно-модульные здания',
-                'order' => 1,
-                'lnk' => "/products/blocno-modulnye-zdaniia",
             ],
             [
                 'menu_name' => 'Другая продукция',
