@@ -9,6 +9,7 @@ use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\PageResource;
 
 use MoonShine\MenuManager\MenuItem;
+use MoonShine\MenuManager\MenuGroup;
 
 
 use MoonShine\Laravel\Layouts\AppLayout;
@@ -37,6 +38,16 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\TopBar,
     Layout\Wrapper,
     When};
+use App\MoonShine\Resources\AdvantageResource;
+use App\MoonShine\Resources\StageResource;
+use App\MoonShine\Resources\GeograpyResource;
+use App\MoonShine\Resources\PartnerResource;
+use App\MoonShine\Resources\SeoDataResource;
+use App\MoonShine\Resources\ParametrResource;
+use App\MoonShine\Resources\VacancyResource;
+use App\MoonShine\Resources\ServiceResource;
+use App\MoonShine\Resources\ProductResource;
+use App\MoonShine\Resources\MetalStructuresResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -50,10 +61,26 @@ final class MoonShineLayout extends AppLayout
     protected function menu(): array
     {
         return [
-            MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
-            MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
+            MenuGroup::make('Главная страница', [
+                MenuItem::make('Преимущества', AdvantageResource::class)->icon('chart-pie'),
+                MenuItem::make('Этапы работы', StageResource::class)->icon('document-chart-bar'),
+                MenuItem::make('География', GeograpyResource::class)->icon('globe-americas'),
+                MenuItem::make('Партнеры', PartnerResource::class)->icon('building-office-2'),
+            ])->icon('computer-desktop'),
+            MenuGroup::make('Настройки сайта', [
+                MenuItem::make('Параметры сайта', ParametrResource::class)->icon('cube'),
+                MenuItem::make('SEO', SeoDataResource::class,)->icon('chart-bar-square'),
+                MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
+                MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
+            ])->icon('cog-8-tooth'),
+
             MenuItem::make("Страницы", PageResource::class)->icon('document-text'),
+            MenuItem::make('Вакансии', VacancyResource::class)->icon('identification'),
+            MenuItem::make('Услуги', ServiceResource::class)->icon('light-bulb'),
+            MenuItem::make('Продукты', ProductResource::class)->icon('rectangle-stack'),
+            MenuItem::make('Металлоконструкции', MetalStructuresResource::class)->icon('shield-check'),
             ...parent::menu(),
+
         ];
     }
 

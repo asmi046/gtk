@@ -113,3 +113,344 @@ _____________
 Автодор
 
 В каждый элемент вставь загруженные ранее изображения пример image'=>"partners/partners/ase.jpg",
+
+________
+
+Для ModelResource админ панели moonshine который находится в файле app\MoonShine\Resources\AdvantageResource.php проставь поля опираясь на миграцию database\migrations\2025_05_21_152823_create_advantages_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'Преимущества';
+protected string $column = 'title';
+
+В метод indexFields вынеси поля:
+
+'title'
+'order'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом оson используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+ 'title'
+________
+
+Для ModelResource админ панели moonshine который находится в файле app\MoonShine\Resources\StageResource.php проставь поля опираясь на миграцию database\migrations\2025_05_21_175914_create_stages_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'Преимущества';
+protected string $column = 'title';
+
+Если поля существуют замени в них содержимое.
+
+В метод indexFields вынеси поля:
+
+'title'
+'order'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом оson используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+ 'title'
+
+________
+
+Для ModelResource админ панели moonshine который находится в файле app\MoonShine\Resources\GeograpyResource.php проставь поля опираясь на миграцию database\migrations\2025_05_28_360643_create_geograpies_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'География';
+protected string $column = 'name';
+
+Если поля существуют замени в них содержимое.
+
+В метод indexFields вынеси поля:
+
+'name'
+'type'
+'geo'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом оson используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+ 'name'
+ 'type'
+________
+
+Для ModelResource админ панели moonshine который находится в файле \app\MoonShine\Resources\PartnerResource.php проставь поля опираясь на миграцию database\migrations\2025_05_19_140453_create_partners_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'География';
+protected string $column = 'name';
+
+Если поля существуют замени в них содержимое.
+
+В метод indexFields вынеси поля:
+
+'title'
+'image'
+'order'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img или image используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом оson используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+'title'
+
+________
+
+Для ModelResource админ панели moonshine который находится в файле \app\MoonShine\Resources\VacancyResource.php проставь поля опираясь на миграцию database\migrations\2025_06_18_052641_create_vacancies_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'Вакансии';
+protected string $column = 'title';
+
+Если поля существуют замени в них содержимое.
+
+В метод indexFields вынеси поля:
+
+'title'
+'city'
+'company_name'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img или image используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом оson используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+'title'
+'description'
+________
+
+Для ModelResource админ панели moonshine который находится в файле app\MoonShine\Resources\ServiceResource.php проставь поля опираясь на миграцию database\migrations\2025_08_08_120819_create_services_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'Услуги';
+protected string $column = 'title';
+
+Если поля существуют замени в них содержимое.
+
+В метод indexFields вынеси поля:
+
+'title'
+'img'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img или image используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом оson используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+'title'
+'description'
+________
+
+Для ModelResource админ панели moonshine который находится в файле app\MoonShine\Resources\ProductResource.php проставь поля опираясь на миграцию database\migrations\2025_06_16_210944_create_products_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'Услуги';
+protected string $column = 'title';
+
+Если поля существуют замени в них содержимое.
+
+В метод indexFields вынеси поля:
+
+'title'
+'img'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img или image используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом json используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же ко всем полям json добавляй ->removable()
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+'title'
+'description'
+________
+
+Для ModelResource админ панели moonshine который находится в файле app\MoonShine\Resources\MetalStructuresResource.php проставь поля опираясь на миграцию database\migrations\2025_06_22_205158_create_metal_structures_table.php.
+
+В класс ресурса добавь следующие поля:
+
+protected string $title = 'Металоконструкции';
+protected string $column = 'title';
+
+Если поля существуют замени в них содержимое.
+
+В метод indexFields вынеси поля:
+
+'title'
+'img'
+
+В методах formFields и detailFields распиши все поля кроме created_at и updated_at
+
+При формировании полей используй ->comment в миграции в качестве имени поля. Пример: Text::make("Заголовок", 'title'),
+Для полей миграции с именем img или image используй компонент Image так же добавляй ->dir(''), строку внутри оставляй пустой.  Пример: Image::make('Изображение', 'img')->dir(''),
+Для полей миграции с именем slug используй компонент Slug.  Пример: Slug::make("Ссылка", 'slug'),
+Для полей миграции с типом boolean используй компонент Switcher.  Пример: Switcher::make('По умолчанию', 'is_default'),
+Для полей миграции с именем description используй компонент TinyMce.  Пример: TinyMce::make('Описание', 'description'),
+Для полей миграции с типом json используй компонент Json, с модификаторм ->fields в котором по умолчанию должно быть поле Position::make().  Пример:
+Json::make('Галерея', 'images')->fields([
+    Position::make(),
+]),
+
+Так же ко всем полям json добавляй ->removable()
+
+Так же опираясь на миграцию заполни метод rules, при этом не включай поля которые в миграции помеченны nullable(), так же не включай поле slug
+
+Так же добавь метод filters по следующему шаблону
+
+    protected function filters(): iterable
+    {
+        return [
+
+        ];
+    }
+
+В этом методе должны быть следующие поля:
+'title'
+'description'
