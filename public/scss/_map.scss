@@ -70,6 +70,9 @@
 
         &__item {
             gap: 8px;
+            flex-wrap: wrap;
+            white-space: wrap;
+            align-items: start;
         }
 
         &__icon {
@@ -79,6 +82,7 @@
 
         &__text {
             font-size: 12px;
+            flex: 1;
         }
     }
 }

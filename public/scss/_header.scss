@@ -353,16 +353,15 @@
             display: none;
         }
 
-        &__video-overlay {
-            background-image: url('../img/left_bg.svg');
-            background-position: bottom right;
-        }
+
     }
 }
 
 @media (width <= 480px) {
     .header  {
         &__wrapper {
+            max-height: unset;
+            height: auto;
             &.__page {
                 .container h1 {
                     font-size: 38px;
